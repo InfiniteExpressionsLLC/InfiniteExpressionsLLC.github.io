@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://infiniteexpressionsllc.github.io/sitemap.xml
