@@ -2,7 +2,7 @@
 
 This repository contains the public website for **Infinite Expressions LLC**, an early-stage medical-technology company developing an impression-free digital workflow for custom facial prosthetics.
 
-The public site describes our current R&D focus across high-resolution 3D scanning, IEAI (Infinite Expressions AI), digital anatomical modeling, engineering validation, and silicone additive-manufacturing feasibility research.
+The public site describes our current R&D focus across high-resolution 3D scanning, **Infinite Expressions Artificial Intelligence (IEAI)**, digital anatomical modeling, engineering validation, and silicone additive-manufacturing feasibility research.
 
 ## Development stage
 
