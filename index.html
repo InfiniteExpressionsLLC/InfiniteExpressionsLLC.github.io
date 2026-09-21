@@ -6,13 +6,14 @@
   <title>Infinite Expressions LLC | Digital Facial Prosthetics R&D</title>
   <meta name="description" content="Infinite Expressions LLC is a founder-led Colorado MedTech R&D company developing a human-supervised digital workflow for patient-specific facial prosthetics using 3D scanning, IEAI, digital engineering, validation, and additive-manufacturing research.">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
-  <meta name="theme-color" content="#061426">
+  <meta name="theme-color" content="#050d1a">
   <meta name="author" content="Infinite Expressions LLC">
   <link rel="canonical" href="https://iexpressionsllc.com/">
-  <link rel="icon" href="/brand-mark.svg" type="image/svg+xml">
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkluZmluaXRlIEV4cHJlc3Npb25zIG1hcmsiPgogIDxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzFlNzNmZiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2E3YjBiOCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiByeD0iMjYiIGZpbGw9IiMwNzFiMzYiLz4KICA8cGF0aCBkPSJNMzMgNjRjMC0xNSA5LTI1IDIxLTI1IDE0IDAgMjIgMTYgMzEgMjkgNSA3IDkgMTIgMTQgMTIgNiAwIDEwLTYgMTAtMTZzLTQtMTYtMTAtMTZjLTUgMC05IDUtMTQgMTJsLTggMTJjLTkgMTMtMTYgMTctMjMgMTctMTIgMC0yMS0xMC0yMS0yNXptMTIgMGMwIDEwIDQgMTUgMTAgMTUgNSAwIDktNSAxNC0xMmw4LTEyYzgtMTIgMTUtMTggMjMtMTggMTMgMCAyMiAxMSAyMiAyN3MtOSAyNy0yMiAyN2MtMTIgMC0yMC0xMS0yOC0yMy03LTEwLTEyLTE5LTE4LTE5LTYgMC0xMCA2LTEwIDE1eiIgZmlsbD0idXJsKCNnKSIvPgo8L3N2Zz4K" type="image/svg+xml">
 
+  <!-- Open Graph / Social Sharing -->
   <meta property="og:title" content="Infinite Expressions LLC | Digital Facial Prosthetics R&D">
-  <meta property="og:description" content="Founder-led MedTech R&D advancing a human-supervised digital workflow from 3D facial capture through IEAI-assisted engineering and additive-manufacturing research.">
+  <meta property="og:description" content="Founder-led MedTech R&D advancing a human-supervised digital workflow from 3D facial capture through IEAI-assisted engineering, CAD validation, and additive-manufacturing research.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://iexpressionsllc.com/">
   <meta property="og:site_name" content="Infinite Expressions LLC">
@@ -21,13 +22,2585 @@
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Infinite Expressions LLC — Digital Facial Prosthetics R&D">
 
+  <!-- Twitter Meta -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Infinite Expressions LLC | Digital Facial Prosthetics R&D">
   <meta name="twitter:description" content="Founder-led MedTech R&D advancing a human-supervised digital workflow for patient-specific facial prosthetics.">
   <meta name="twitter:image" content="https://iexpressionsllc.com/social-card.png">
 
-  <link rel="stylesheet" href="styles.css">
+  <!-- Precision Medical Engineering Stylesheet -->
+  <style>/* ==========================================================================
+   INFINITE EXPRESSIONS LLC — MEDICAL TECHNOLOGY R&D
+   Design System: Medical Metrology, High-Contrast Gunmetal & Navy, Cool Silver
+   ========================================================================== */
 
+:root {
+  /* Color Palette */
+  --bg-deep: #050d1a;
+  --bg-canvas: #071324;
+  --bg-surface: #0a1b32;
+  --bg-card: #0e2442;
+  --bg-card-hover: #122c50;
+  --bg-subtle: rgba(255, 255, 255, 0.04);
+  --bg-glass: rgba(14, 36, 66, 0.72);
+
+  --border-subtle: rgba(255, 255, 255, 0.09);
+  --border-medium: rgba(255, 255, 255, 0.16);
+  --border-bright: rgba(79, 158, 255, 0.35);
+
+  --accent-blue: #2b7fff;
+  --accent-blue-hover: #4d93ff;
+  --accent-glow: rgba(43, 127, 255, 0.18);
+  --accent-cyan: #4ade80;
+  --accent-amber: #f59e0b;
+  --accent-silver: #c9d8ea;
+
+  --text-bright: #ffffff;
+  --text-main: #e2ecf7;
+  --text-muted: #94a9c2;
+  --text-dim: #647b97;
+
+  --status-verified: #10b981;
+  --status-verified-bg: rgba(16, 185, 129, 0.12);
+  --status-verified-border: rgba(16, 185, 129, 0.3);
+
+  --status-dev: #3b82f6;
+  --status-dev-bg: rgba(59, 130, 246, 0.12);
+  --status-dev-border: rgba(59, 130, 246, 0.3);
+
+  --status-research: #a855f7;
+  --status-research-bg: rgba(168, 85, 247, 0.12);
+  --status-research-border: rgba(168, 85, 247, 0.3);
+
+  /* Typography */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Code", "Source Code Pro", Menlo, monospace;
+
+  /* Elevation */
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.28);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.36);
+  --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.48);
+  --shadow-glow: 0 0 40px rgba(43, 127, 255, 0.15);
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+
+  --wrap-max: 1220px;
+}
+
+/* Base Reset & Smoothness */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+  background-color: var(--bg-deep);
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-deep);
+  color: var(--text-main);
+  line-height: 1.65;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Accessibility Skip Link */
+.skip-link {
+  position: absolute;
+  top: -999px;
+  left: 20px;
+  background: var(--accent-blue);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  z-index: 10000;
+  transition: top 0.2s ease;
+}
+.skip-link:focus {
+  top: 20px;
+  outline: 3px solid #fff;
+}
+
+/* Visible Focus Outline */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--accent-blue-hover);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* Container */
+.wrap {
+  width: min(var(--wrap-max), calc(100% - 48px));
+  margin-inline: auto;
+}
+
+@media (max-width: 640px) {
+  .wrap {
+    width: min(var(--wrap-max), calc(100% - 32px));
+  }
+}
+
+/* Header & Navigation */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(5, 13, 26, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-subtle);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.site-header.scrolled {
+  background: rgba(5, 13, 26, 0.96);
+  border-bottom-color: var(--border-medium);
+}
+
+.nav {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.brand img {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(43, 127, 255, 0.2);
+}
+
+.brand-copy strong {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--text-bright);
+}
+
+.brand-copy small {
+  display: block;
+  font-size: 0.72rem;
+  font-family: var(--font-mono);
+  color: var(--accent-silver);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-links a {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+  position: relative;
+  padding: 6px 0;
+}
+
+.nav-links a:hover {
+  color: var(--text-bright);
+}
+
+.nav-cta {
+  padding: 10px 20px !important;
+  border-radius: var(--radius-full);
+  background: var(--bg-card);
+  border: 1px solid var(--border-medium);
+  color: var(--text-bright) !important;
+  font-weight: 700 !important;
+  transition: all 0.2s ease !important;
+}
+
+.nav-cta:hover {
+  background: var(--accent-blue) !important;
+  border-color: var(--accent-blue) !important;
+  box-shadow: 0 4px 20px rgba(43, 127, 255, 0.35);
+  transform: translateY(-1px);
+}
+
+.menu-btn {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-bright);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-btn span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: currentColor;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Typography Helpers */
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent-blue-hover);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.kicker::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 2px;
+  background: var(--accent-blue);
+  border-radius: 2px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--status-verified);
+  box-shadow: 0 0 8px var(--status-verified);
+  display: inline-block;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 26px;
+  border-radius: var(--radius-full);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--accent-blue);
+  color: #fff;
+  border: 1px solid var(--accent-blue-hover);
+  box-shadow: 0 4px 24px rgba(43, 127, 255, 0.35);
+}
+
+.btn-primary:hover {
+  background: var(--accent-blue-hover);
+  box-shadow: 0 6px 30px rgba(43, 127, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-bright);
+  border: 1px solid var(--border-medium);
+  backdrop-filter: blur(8px);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: var(--accent-silver);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 1px solid var(--border-medium);
+  color: var(--text-bright);
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--text-bright);
+}
+
+/* Section Headings */
+.section-head {
+  max-width: 820px;
+  margin-bottom: 48px;
+}
+
+.section-head.centered {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.section-head.centered .kicker {
+  justify-content: center;
+}
+
+.section-head.centered .kicker::before {
+  display: none;
+}
+
+.section-head h2 {
+  font-size: clamp(2.1rem, 4vw, 3.2rem);
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+  color: var(--text-bright);
+  margin: 8px 0 16px;
+}
+
+.section-head p {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.68;
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.hero {
+  position: relative;
+  padding: 72px 0 88px;
+  overflow: hidden;
+  background: radial-gradient(circle at 75% 20%, rgba(43, 127, 255, 0.12), transparent 45%),
+              radial-gradient(circle at 20% 80%, rgba(14, 36, 66, 0.6), transparent 50%),
+              linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-canvas) 100%);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+/* Subtle Technical Grid Pattern */
+.hero-grid-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse at 60% 40%, black 20%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse at 60% 40%, black 20%, transparent 80%);
+  pointer-events: none;
+}
+
+.hero-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1.12fr 0.88fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.hero-copy-block {
+  max-width: 660px;
+}
+
+.hero h1 {
+  font-size: clamp(2.6rem, 5.2vw, 4.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: var(--text-bright);
+  margin: 16px 0 22px;
+}
+
+.hero h1 span {
+  display: block;
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.hero-copy {
+  font-size: 1.15rem;
+  color: var(--text-main);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.hero-workflow-bullets {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 18px;
+  margin-bottom: 32px;
+}
+
+.hero-workflow-bullets li {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 0.92rem;
+  color: var(--accent-silver);
+  font-weight: 500;
+}
+
+.hero-workflow-bullets li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-blue-hover);
+  flex-shrink: 0;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+/* Research Stage Disclosure */
+.research-disclosure-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px 20px;
+  background: rgba(14, 36, 66, 0.55);
+  border: 1px solid rgba(79, 158, 255, 0.22);
+  border-radius: var(--radius-md);
+  backdrop-filter: blur(8px);
+}
+
+.research-disclosure-badge {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  color: #fbbf24;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+
+.research-disclosure-badge::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fbbf24;
+}
+
+.research-disclosure-card p {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.research-disclosure-card p strong {
+  color: var(--text-bright);
+}
+
+/* Hero Technical Metrology Visual */
+.hero-visual-card {
+  position: relative;
+  background: linear-gradient(160deg, rgba(14, 36, 66, 0.8), rgba(7, 19, 36, 0.95));
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-xl);
+  padding: 24px;
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
+  overflow: hidden;
+}
+
+.visual-topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border-subtle);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+}
+
+.visual-mode {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent-silver);
+}
+
+.visual-mode-pulse {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-blue-hover);
+  animation: pulseGlow 2s infinite ease-in-out;
+}
+
+.visual-telemetry-tag {
+  color: var(--status-verified);
+  background: var(--status-verified-bg);
+  border: 1px solid var(--status-verified-border);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+/* SVG Face Mesh Container */
+.metrology-stage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1.05;
+  max-width: 440px;
+  margin: 16px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mesh-svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 16px rgba(43, 127, 255, 0.25));
+}
+
+/* Metrology Annotations */
+.metrology-callout {
+  position: absolute;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  background: rgba(5, 13, 26, 0.85);
+  border: 1px solid var(--border-medium);
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: var(--text-muted);
+  backdrop-filter: blur(4px);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.metrology-callout strong {
+  color: var(--accent-blue-hover);
+}
+
+.callout-nasion { top: 12%; left: 8%; }
+.callout-pronasale { top: 48%; right: 4%; }
+.callout-subnasale { bottom: 32%; left: 4%; }
+.callout-cad { bottom: 10%; right: 8%; }
+
+/* Scanning Laser Line */
+.scan-beam {
+  animation: scanSweep 4.5s infinite ease-in-out;
+  transform-origin: center;
+}
+
+@keyframes scanSweep {
+  0% { transform: translateY(-160px); opacity: 0; }
+  10% { opacity: 0.85; }
+  50% { transform: translateY(160px); opacity: 0.85; }
+  90% { opacity: 0.85; }
+  100% { transform: translateY(-160px); opacity: 0; }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.4; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.15); }
+}
+
+.visual-hud {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-subtle);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+}
+
+.hud-item {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.hud-item span {
+  display: block;
+  color: var(--text-dim);
+  font-size: 0.65rem;
+  margin-bottom: 2px;
+}
+
+.hud-item strong {
+  display: block;
+  color: var(--text-bright);
+}
+
+/* ==========================================================================
+   CREDIBILITY BAR
+   ========================================================================== */
+.credibility {
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 32px 0;
+}
+
+.credibility-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.credential-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  transition: all 0.2s ease;
+}
+
+.credential-item:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--border-medium);
+  transform: translateY(-2px);
+}
+
+.credential-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-medium);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--accent-blue-hover);
+  flex-shrink: 0;
+}
+
+.credential-copy strong {
+  display: block;
+  color: var(--text-bright);
+  font-size: 0.98rem;
+  font-weight: 700;
+}
+
+.credential-copy small {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+/* ==========================================================================
+   OPPORTUNITY / CLINICAL REALITY SECTION
+   ========================================================================== */
+.opportunity-section {
+  padding: 104px 0;
+  background: var(--bg-deep);
+  position: relative;
+}
+
+.opportunity-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 56px;
+  align-items: center;
+  margin-bottom: 56px;
+}
+
+.opportunity-copy p {
+  font-size: 1.08rem;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+}
+
+.opportunity-copy p strong {
+  color: var(--text-bright);
+}
+
+.opportunity-comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.comparison-card {
+  padding: 28px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+}
+
+.comparison-card.current {
+  border-color: rgba(239, 68, 68, 0.25);
+  background: linear-gradient(180deg, rgba(239, 68, 68, 0.05) 0%, var(--bg-surface) 100%);
+}
+
+.comparison-card.proposed {
+  border-color: var(--status-dev-border);
+  background: linear-gradient(180deg, var(--status-dev-bg) 0%, var(--bg-surface) 100%);
+}
+
+.comparison-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.comparison-header h3 {
+  font-size: 1.15rem;
+  color: var(--text-bright);
+}
+
+.comparison-tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.comparison-card.current .comparison-tag {
+  color: #fca5a5;
+  background: rgba(239, 68, 68, 0.15);
+}
+
+.comparison-card.proposed .comparison-tag {
+  color: var(--accent-blue-hover);
+  background: var(--status-dev-bg);
+}
+
+.comparison-card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.comparison-card li {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.5;
+}
+
+.comparison-card.current li::before {
+  content: "—";
+  color: #f87171;
+  font-weight: 700;
+}
+
+.comparison-card.proposed li::before {
+  content: "✓";
+  color: var(--status-verified);
+  font-weight: 700;
+}
+
+/* Three Core Problem Pillars */
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.pillar-card {
+  padding: 32px 28px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  transition: all 0.25s ease;
+}
+
+.pillar-card:hover {
+  background: var(--bg-card);
+  border-color: var(--border-medium);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.pillar-index {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-blue-hover);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.pillar-card h3 {
+  font-size: 1.28rem;
+  color: var(--text-bright);
+  margin-bottom: 12px;
+}
+
+.pillar-card p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   INTERACTIVE TECHNOLOGY WORKFLOW
+   ========================================================================== */
+.technology-section {
+  padding: 104px 0;
+  background: linear-gradient(180deg, var(--bg-canvas) 0%, var(--bg-surface) 100%);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+/* Workflow Navigation Tabs */
+.workflow-nav-bar {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.workflow-tab-btn {
+  padding: 20px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  text-align: left;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.workflow-tab-btn:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-medium);
+}
+
+.workflow-tab-btn.active {
+  background: rgba(43, 127, 255, 0.12);
+  border-color: var(--accent-blue);
+  box-shadow: 0 4px 20px rgba(43, 127, 255, 0.25);
+}
+
+.workflow-tab-btn.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--accent-blue);
+}
+
+.tab-stage-num {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--accent-silver);
+  font-weight: 700;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.tab-stage-title {
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: var(--text-bright);
+  display: block;
+}
+
+/* Active Stage Detail Panel */
+.workflow-detail-display {
+  background: var(--bg-deep);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  box-shadow: var(--shadow-lg);
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: center;
+  transition: opacity 0.25s ease;
+}
+
+.detail-header {
+  margin-bottom: 20px;
+}
+
+.detail-stage-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  color: var(--accent-blue-hover);
+  margin-bottom: 8px;
+}
+
+.detail-header h3 {
+  font-size: 2rem;
+  color: var(--text-bright);
+  letter-spacing: -0.02em;
+}
+
+.detail-subtitle {
+  font-size: 1.05rem;
+  color: var(--accent-silver);
+  font-weight: 600;
+  margin-top: 4px;
+}
+.detail-body p {
+  font-size: 1.02rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.detail-specs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.detail-spec-box {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 16px;
+}
+
+.detail-spec-box span {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 4px;
+}
+
+.detail-spec-box strong {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-bright);
+  line-height: 1.4;
+}
+
+/* Detail Schematic Visualization */
+.detail-schematic-wrap {
+  background: linear-gradient(135deg, rgba(14, 36, 66, 0.6), rgba(5, 13, 26, 0.9));
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.schematic-topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent-silver);
+}
+
+.schematic-visual {
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 16px;
+}
+
+.schematic-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: rgba(43, 127, 255, 0.15);
+  border: 1px solid rgba(79, 158, 255, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-blue-hover);
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+}
+
+.schematic-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+}
+
+.schematic-status-pill.verified {
+  background: var(--status-verified-bg);
+  color: var(--status-verified);
+  border: 1px solid var(--status-verified-border);
+}
+
+.schematic-status-pill.in-development {
+  background: var(--status-dev-bg);
+  color: var(--status-dev);
+  border: 1px solid var(--status-dev-border);
+}
+
+.schematic-status-pill.research {
+  background: var(--status-research-bg);
+  color: var(--status-research);
+  border: 1px solid var(--status-research-border);
+}
+
+/* Digital Thread Full Bar */
+.digital-thread-bar {
+  margin-top: 36px;
+  padding: 20px 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.digital-thread-bar strong {
+  color: var(--text-bright);
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.thread-chain {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.thread-chain span {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-main);
+}
+
+.thread-chain b {
+  color: var(--accent-blue-hover);
+}
+
+/* ==========================================================================
+   IEAI SECTION
+   ========================================================================== */
+.ieai-section {
+  padding: 104px 0;
+  background: var(--bg-deep);
+  position: relative;
+}
+
+.ieai-architecture-overview {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 48px;
+  align-items: start;
+  margin-bottom: 56px;
+}
+
+.ieai-overview-copy p {
+  font-size: 1.08rem;
+  color: var(--text-muted);
+  line-height: 1.72;
+  margin-bottom: 20px;
+}
+
+.ieai-overview-copy p strong {
+  color: var(--text-bright);
+}
+
+.ieai-core-principle-card {
+  margin-top: 28px;
+  padding: 24px;
+  background: linear-gradient(135deg, rgba(43, 127, 255, 0.08) 0%, rgba(14, 36, 66, 0.6) 100%);
+  border: 1px solid rgba(79, 158, 255, 0.3);
+  border-radius: var(--radius-lg);
+}
+
+.principle-title {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  color: var(--accent-blue-hover);
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.ieai-core-principle-card blockquote {
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: var(--text-bright);
+  line-height: 1.45;
+}
+
+/* Architecture Pillars Side Panel */
+.ieai-architecture-card {
+  padding: 32px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+}
+
+.ieai-architecture-card h3 {
+  font-size: 1.3rem;
+  color: var(--text-bright);
+  margin-bottom: 16px;
+}
+
+.ieai-guardrails-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.ieai-guardrails-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.guardrail-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-blue-hover);
+  font-size: 0.75rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.ieai-guardrails-list strong {
+  color: var(--text-bright);
+}
+
+/* 8 Capability Modules Grid */
+.ieai-modules-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.ieai-modules-head h3 {
+  font-size: 1.65rem;
+  color: var(--text-bright);
+}
+
+.capability-legend {
+  display: flex;
+  gap: 16px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.legend-dot.verified { background: var(--status-verified); }
+.legend-dot.dev { background: var(--status-dev); }
+.legend-dot.research { background: var(--status-research); }
+
+.modules-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.module-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.module-card:hover {
+  background: var(--bg-card);
+  border-color: var(--border-medium);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+}
+
+.module-status-badge {
+  align-self: flex-start;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-bottom: 14px;
+}
+
+.module-status-badge.verified {
+  background: var(--status-verified-bg);
+  color: var(--status-verified);
+  border: 1px solid var(--status-verified-border);
+}
+
+.module-status-badge.dev {
+  background: var(--status-dev-bg);
+  color: var(--status-dev);
+  border: 1px solid var(--status-dev-border);
+}
+
+.module-status-badge.research {
+  background: var(--status-research-bg);
+  color: var(--status-research);
+  border: 1px solid var(--status-research-border);
+}
+
+.module-card h4 {
+  font-size: 1.15rem;
+  color: var(--text-bright);
+  margin-bottom: 8px;
+}
+
+.module-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin-top: auto;
+}
+
+/* ==========================================================================
+   DEVELOPMENT STATUS SECTION
+   ========================================================================== */
+.progress-section {
+  padding: 104px 0;
+  background: var(--bg-canvas);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.progress-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 0.9fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.progress-column {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-column.verified {
+  border-top: 4px solid var(--status-verified);
+}
+
+.progress-column.in-development {
+  border-top: 4px solid var(--status-dev);
+}
+
+.progress-column.planned {
+  border-top: 4px solid var(--status-research);
+}
+
+.progress-column-header {
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.progress-column-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.progress-column.verified .progress-column-status { color: var(--status-verified); }
+.progress-column.in-development .progress-column-status { color: var(--status-dev); }
+.progress-column.planned .progress-column-status { color: var(--status-research); }
+
+.progress-column-header h3 {
+  font-size: 1.25rem;
+  color: var(--text-bright);
+}
+
+.progress-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.progress-list li {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.progress-column.verified .progress-list li::before {
+  content: "✓";
+  color: var(--status-verified);
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.progress-column.in-development .progress-list li::before {
+  content: "→";
+  color: var(--status-dev);
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.progress-column.planned .progress-list li::before {
+  content: "◇";
+  color: var(--status-research);
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+/* Company Facts Card (Side Column) */
+.facts-card {
+  background: linear-gradient(160deg, rgba(14, 36, 66, 0.8), rgba(5, 13, 26, 0.95));
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-xl);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.facts-card h3 {
+  font-size: 1.2rem;
+  color: var(--text-bright);
+  margin-bottom: 20px;
+}
+
+.facts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.facts-list div {
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.facts-list dt {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 2px;
+}
+
+.facts-list dd {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-bright);
+}
+
+/* ==========================================================================
+   FOUNDER STORY SECTION
+   ========================================================================== */
+.founder-section {
+  padding: 104px 0;
+  background: var(--bg-deep);
+  position: relative;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.founder-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.founder-visual-panel {
+  background: linear-gradient(150deg, rgba(14, 36, 66, 0.7) 0%, rgba(7, 19, 36, 0.95) 100%);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.founder-brand-frame {
+  width: 112px;
+  height: 112px;
+  border-radius: 28px;
+  background: var(--bg-surface);
+  border: 2px solid var(--border-medium);
+  padding: 14px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.4);
+  margin-bottom: 28px;
+}
+
+.founder-quote {
+  font-size: 1.28rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--text-bright);
+  font-style: italic;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.founder-credentials {
+  padding-top: 20px;
+  border-top: 1px solid var(--border-subtle);
+  width: 100%;
+}
+
+.founder-credentials strong {
+  display: block;
+  font-size: 1.15rem;
+  color: var(--text-bright);
+}
+
+.founder-credentials span {
+  display: block;
+  font-size: 0.84rem;
+  color: var(--accent-silver);
+  margin-top: 4px;
+}
+
+.founder-copy h2 {
+  font-size: clamp(2.1rem, 4vw, 3.2rem);
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  color: var(--text-bright);
+  margin: 12px 0 20px;
+}
+
+.founder-copy p {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.72;
+  margin-bottom: 18px;
+}
+
+.founder-copy p strong {
+  color: var(--text-bright);
+}
+
+.founder-question-callout {
+  padding: 20px 24px;
+  background: rgba(43, 127, 255, 0.08);
+  border-left: 3px solid var(--accent-blue);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-size: 1.08rem;
+  font-weight: 500;
+  color: var(--text-bright) !important;
+  margin: 24px 0 !important;
+  line-height: 1.6 !important;
+}
+
+.founder-stats-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.founder-stat-item {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 18px;
+}
+
+.founder-stat-item strong {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--accent-blue-hover);
+  letter-spacing: -0.02em;
+}
+
+.founder-stat-item span {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+  line-height: 1.4;
+}
+
+/* ==========================================================================
+   PARTNERSHIP SECTION
+   ========================================================================== */
+.collab-section {
+  padding: 104px 0;
+  background: var(--bg-canvas);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.collab-pathways-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 36px;
+}
+
+.collab-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s ease;
+}
+
+.collab-card:hover {
+  background: var(--bg-card);
+  border-color: var(--border-medium);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.collab-tag {
+  align-self: flex-start;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent-blue-hover);
+  background: rgba(43, 127, 255, 0.1);
+  border: 1px solid rgba(43, 127, 255, 0.2);
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.collab-card h3 {
+  font-size: 1.22rem;
+  color: var(--text-bright);
+  margin-bottom: 12px;
+  line-height: 1.35;
+}
+
+.collab-card p {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.collab-link {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--accent-blue-hover);
+  transition: gap 0.2s ease;
+}
+
+.collab-link:hover {
+  gap: 12px;
+  color: var(--text-bright);
+}
+
+/* Technology Partner Opportunity Callout */
+.tech-partner-card {
+  padding: 28px 32px;
+  background: linear-gradient(135deg, rgba(14, 36, 66, 0.8), rgba(5, 13, 26, 0.95));
+  border: 1px solid rgba(79, 158, 255, 0.28);
+  border-radius: var(--radius-xl);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.tech-partner-card-copy strong {
+  display: block;
+  font-size: 1.15rem;
+  color: var(--text-bright);
+  margin-bottom: 6px;
+}
+
+.tech-partner-card-copy p {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ==========================================================================
+   CONTACT SECTION
+   ========================================================================== */
+.contact-section {
+  padding: 88px 0;
+  background: radial-gradient(circle at 80% 20%, rgba(43, 127, 255, 0.15), transparent 40%),
+              var(--bg-deep);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.contact-shell {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.contact-copy h2 {
+  font-size: clamp(2.1rem, 4vw, 3.2rem);
+  color: var(--text-bright);
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  margin-bottom: 16px;
+}
+
+.contact-copy p {
+  font-size: 1.08rem;
+  color: var(--text-muted);
+  line-height: 1.68;
+}
+
+.contact-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-xl);
+  padding: 36px;
+  box-shadow: var(--shadow-lg);
+}
+
+.contact-recipient strong {
+  display: block;
+  font-size: 1.2rem;
+  color: var(--text-bright);
+}
+
+.contact-recipient span {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--accent-silver);
+  margin-top: 3px;
+}
+
+.email-address-link {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: var(--accent-blue-hover);
+  margin: 18px 0;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.email-address-link:hover {
+  color: #fff;
+}
+
+.contact-locations {
+  display: flex;
+  gap: 16px;
+  font-size: 0.84rem;
+  color: var(--text-dim);
+  margin-bottom: 24px;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.site-footer {
+  background: #030811;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 48px 0 36px;
+  color: var(--text-dim);
+  font-size: 0.86rem;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer-brand strong {
+  display: block;
+  color: var(--text-bright);
+  font-size: 1.05rem;
+}
+
+.footer-brand span {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--text-bright);
+}
+
+.footer-disclaimers {
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-copyright {
+  color: var(--text-muted);
+}
+
+.footer-legal-text {
+  font-size: 0.78rem;
+  line-height: 1.6;
+  color: var(--text-dim);
+  max-width: 1040px;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 1120px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .hero-visual-card {
+    max-width: 580px;
+    margin-inline: auto;
+  }
+  .credibility-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .opportunity-grid {
+    grid-template-columns: 1fr;
+  }
+  .workflow-nav-bar {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .workflow-detail-display {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .modules-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .progress-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .founder-grid {
+    grid-template-columns: 1fr;
+  }
+  .collab-pathways-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-shell {
+    grid-template-columns: 1fr;
+  }
+  .ieai-architecture-overview {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: rgba(5, 13, 26, 0.98);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-medium);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px 32px;
+    gap: 18px;
+    box-shadow: var(--shadow-lg);
+    display: none;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .nav-cta {
+    width: 100%;
+    text-align: center;
+  }
+  .menu-btn {
+    display: flex;
+  }
+  .hero-workflow-bullets {
+    grid-template-columns: 1fr;
+  }
+  .tech-partner-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 48px 0 64px;
+  }
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+  .credibility-grid {
+    grid-template-columns: 1fr;
+  }
+  .opportunity-comparison {
+    grid-template-columns: 1fr;
+  }
+  .pillars-grid {
+    grid-template-columns: 1fr;
+  }
+  .workflow-nav-bar {
+    grid-template-columns: 1fr;
+  }
+  .workflow-detail-display {
+    padding: 24px;
+  }
+  .detail-specs-grid {
+    grid-template-columns: 1fr;
+  }
+  .modules-grid {
+    grid-template-columns: 1fr;
+  }
+  .progress-grid {
+    grid-template-columns: 1fr;
+  }  .founder-stats-strip {
+    grid-template-columns: 1fr;
+  }
+  .collab-pathways-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-card {
+    padding: 24px;
+  }
+  .contact-actions .btn {
+    width: 100%;
+  }
+  .footer-main {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Reduced Motion Preference */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .scan-beam, .visual-mode-pulse {
+    animation: none !important;
+  }
+}
+
+
+/* ==========================================================================
+   V2 PREMIUM INTERACTION & MOTION LAYER
+   Lightweight, dependency-free, and reduced-motion aware.
+   ========================================================================== */
+
+.page-progress {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  overflow: hidden;
+  background: transparent;
+  pointer-events: none;
+}
+.page-progress span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: left center;
+  background: linear-gradient(90deg, var(--accent-blue-hover), #8ba7cc);
+  box-shadow: 0 0 14px rgba(79, 158, 255, 0.45);
+}
+
+.nav-links a {
+  position: relative;
+}
+.nav-links a:not(.nav-cta)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: center;
+  background: var(--accent-blue-hover);
+  transition: transform .2s ease;
+}
+.nav-links a:not(.nav-cta):hover::after,
+.nav-links a:not(.nav-cta).is-current::after {
+  transform: scaleX(1);
+}
+.nav-links a.is-current {
+  color: var(--text-bright);
+}
+
+.hero-visual-card,
+.collab-card[data-tilt] {
+  --tilt-x: 0deg;
+  --tilt-y: 0deg;
+  --spot-x: 50%;
+  --spot-y: 50%;
+  transform: perspective(1200px) rotateX(var(--tilt-x)) rotateY(var(--tilt-y));
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.hero-visual-card {
+  transition: transform .16s ease-out, border-color .25s ease, box-shadow .25s ease;
+}
+.hero-visual-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at var(--spot-x) var(--spot-y), rgba(99, 165, 255, .13), transparent 30%),
+    linear-gradient(135deg, rgba(255,255,255,.03), transparent 45%);
+  opacity: .9;
+  z-index: 0;
+}
+.hero-visual-card > * {
+  position: relative;
+  z-index: 1;
+}
+.hero-visual-card:hover {
+  border-color: rgba(99, 165, 255, .32);
+  box-shadow: var(--shadow-lg), 0 0 55px rgba(43,127,255,.18);
+}
+.collab-card[data-tilt] {
+  position: relative;
+  overflow: hidden;
+  transition: transform .16s ease-out, border-color .25s ease, box-shadow .25s ease, background .25s ease;
+}
+.collab-card[data-tilt]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at var(--spot-x) var(--spot-y), rgba(79,158,255,.11), transparent 35%);
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+.collab-card[data-tilt]:hover::before {
+  opacity: 1;
+}
+.collab-card[data-tilt] > * {
+  position: relative;
+  z-index: 1;
+}
+
+.visual-disclaimer {
+  margin: 10px 0 0;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-subtle);
+  font-family: var(--font-mono);
+  font-size: .64rem;
+  line-height: 1.45;
+  letter-spacing: .02em;
+  color: var(--text-dim);
+}
+
+.mesh-svg g[fill="#9dd9ff"] circle,
+.mesh-svg g[fill="#8dc8ff"] circle {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: nodePulse 3.4s ease-in-out infinite;
+}
+.mesh-svg g[fill="#9dd9ff"] circle:nth-child(2n),
+.mesh-svg g[fill="#8dc8ff"] circle:nth-child(2n) {
+  animation-delay: .7s;
+}
+.mesh-svg g[fill="#9dd9ff"] circle:nth-child(3n),
+.mesh-svg g[fill="#8dc8ff"] circle:nth-child(3n) {
+  animation-delay: 1.4s;
+}
+@keyframes nodePulse {
+  0%, 100% { opacity: .58; transform: scale(.86); }
+  50% { opacity: 1; transform: scale(1.28); }
+}
+
+.workflow-detail-display {
+  transition: opacity .18s ease, transform .18s ease, border-color .25s ease;
+}
+.workflow-detail-display.is-switching {
+  opacity: .35;
+  transform: translateY(5px);
+}
+.workflow-tab-btn {
+  overflow: hidden;
+}
+.workflow-tab-btn::after {
+  content: "";
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 0;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: linear-gradient(90deg, var(--accent-blue-hover), #8ba7cc);
+  transition: transform .22s ease;
+}
+.workflow-tab-btn.active::after {
+  transform: scaleX(1);
+}
+
+.module-card[role="button"] {
+  cursor: pointer;
+  outline: none;
+}
+.module-card[role="button"]::after {
+  content: "Explore";
+  margin-top: 16px;
+  font-family: var(--font-mono);
+  font-size: .66rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--text-dim);
+}
+.module-card[role="button"]:focus-visible {
+  border-color: var(--accent-blue-hover);
+  box-shadow: 0 0 0 3px rgba(79,158,255,.16);
+}
+.module-card.active {
+  border-color: rgba(79,158,255,.45);
+  background:
+    linear-gradient(180deg, rgba(43,127,255,.08), rgba(255,255,255,.025)),
+    var(--bg-surface);
+  box-shadow: 0 14px 34px rgba(0,0,0,.24), 0 0 0 1px rgba(79,158,255,.12) inset;
+}
+.module-card.active::after {
+  content: "Selected";
+  color: var(--accent-blue-hover);
+}
+
+.module-explorer {
+  margin-top: 22px;
+  padding: 26px 28px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(260px, .7fr);
+  gap: 28px;
+  align-items: center;
+  border: 1px solid rgba(79,158,255,.26);
+  border-radius: var(--radius-xl);
+  background:
+    radial-gradient(circle at 85% 20%, rgba(43,127,255,.12), transparent 30%),
+    linear-gradient(145deg, rgba(14,36,66,.72), rgba(5,13,26,.96));
+  box-shadow: 0 20px 48px rgba(0,0,0,.24);
+}
+.module-explorer-kicker {
+  display: block;
+  margin-bottom: 6px;
+  font-family: var(--font-mono);
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--accent-blue-hover);
+}
+.module-explorer h4 {
+  margin: 0 0 8px;
+  font-size: 1.35rem;
+  color: var(--text-bright);
+}
+.module-explorer p {
+  margin: 0;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+.module-explorer-meta {
+  padding-left: 24px;
+  border-left: 1px solid var(--border-subtle);
+}
+.module-explorer-meta strong {
+  display: block;
+  margin-top: 10px;
+  color: var(--text-muted);
+  font-size: .88rem;
+  line-height: 1.55;
+  font-weight: 600;
+}
+
+.status-filter {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: -8px 0 24px;
+}
+.status-filter-btn {
+  appearance: none;
+  border: 1px solid var(--border-medium);
+  background: rgba(255,255,255,.025);
+  color: var(--text-muted);
+  border-radius: 999px;
+  padding: 9px 14px;
+  font: inherit;
+  font-size: .82rem;
+  font-weight: 750;
+  cursor: pointer;
+  transition: border-color .2s ease, color .2s ease, background .2s ease, transform .2s ease;
+}
+.status-filter-btn:hover,
+.status-filter-btn:focus-visible {
+  border-color: rgba(79,158,255,.48);
+  color: var(--text-bright);
+}
+.status-filter-btn.active {
+  color: #fff;
+  border-color: rgba(79,158,255,.52);
+  background: linear-gradient(135deg, rgba(43,127,255,.32), rgba(43,127,255,.14));
+  box-shadow: 0 8px 20px rgba(0,0,0,.16);
+}
+.status-filter-btn:active {
+  transform: translateY(1px);
+}
+.progress-column,
+.facts-card {
+  transition: opacity .22s ease, transform .22s ease, border-color .22s ease, filter .22s ease;
+}
+.progress-column.status-dimmed {
+  opacity: .28;
+  filter: saturate(.55);
+  transform: scale(.985);
+}
+.progress-column.status-highlighted {
+  border-color: rgba(79,158,255,.34);
+  transform: translateY(-3px);
+}
+
+.reveal-ready {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity .62s cubic-bezier(.2,.65,.3,1) var(--reveal-delay, 0ms),
+    transform .62s cubic-bezier(.2,.65,.3,1) var(--reveal-delay, 0ms);
+}
+.reveal-ready.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.credential-item {
+  position: relative;
+  overflow: hidden;
+}
+.credential-item::after {
+  content: "";
+  position: absolute;
+  left: -40%;
+  top: 0;
+  width: 35%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.07), transparent);
+  transform: skewX(-20deg);
+  transition: left .7s ease;
+}
+.credential-item:hover::after {
+  left: 115%;
+}
+
+@media (max-width: 900px) {
+  .module-explorer {
+    grid-template-columns: 1fr;
+  }
+  .module-explorer-meta {
+    padding: 18px 0 0;
+    border-left: 0;
+    border-top: 1px solid var(--border-subtle);
+  }
+}
+
+@media (max-width: 640px) {
+  .status-filter {
+    gap: 8px;
+  }
+  .status-filter-btn {
+    flex: 1 1 calc(50% - 8px);
+    min-width: 0;
+  }
+  .module-explorer {
+    padding: 22px;
+  }
+  .visual-disclaimer {
+    font-size: .61rem;
+  }
+  .metrology-callout {
+    font-size: .6rem;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .workflow-tab-btn:hover,
+  .module-card:hover,
+  .collab-card:hover {
+    border-color: rgba(79,158,255,.34);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-visual-card,
+  .collab-card[data-tilt] {
+    transform: none !important;
+  }
+  .reveal-ready {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .mesh-svg circle {
+    animation: none !important;
+  }
+}
+
+
+/* Narrow-screen hardening */
+.hero-grid > *,
+.contact-shell > *,
+.ieai-architecture-overview > *,
+.workflow-detail-display > *,
+.module-explorer > *,
+.footer-main > * {
+  min-width: 0;
+}
+.hero-visual-card,
+.contact-card,
+.contact-copy {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+.contact-copy h2,
+.contact-copy p,
+.contact-card,
+.visual-disclaimer {
+  overflow-wrap: anywhere;
+}
+.visual-topline {
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.visual-telemetry-tag {
+  max-width: 100%;
+  white-space: normal;
+  text-align: right;
+}
+@media (max-width: 360px) {
+  .hero-visual-card {
+    padding: 18px;
+  }
+  .visual-topline {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .visual-telemetry-tag {
+    text-align: left;
+  }
+  .visual-hud {
+    grid-template-columns: 1fr;
+  }
+  .metrology-callout {
+    white-space: normal;
+    max-width: 48%;
+    line-height: 1.35;
+  }
+  .contact-shell {
+    gap: 32px;
+  }
+}
+
+/* Final premium interaction and motion polish */
+.site-header {
+  transition: background .28s ease, box-shadow .28s ease, border-color .28s ease, min-height .28s ease;
+}
+.site-header.is-scrolled {
+  background: rgba(4, 13, 27, .92);
+  border-bottom-color: rgba(120, 168, 226, .2);
+  box-shadow: 0 16px 44px rgba(0, 0, 0, .2);
+}
+.site-header.is-scrolled .nav { min-height: 68px; }
+
+.hero-scroll-cue {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 22px;
+  color: #93aaca;
+  text-decoration: none;
+  font-size: .78rem;
+  font-weight: 760;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  transition: color .2s ease;
+}
+.hero-scroll-cue:hover { color: #d9e9ff; }
+.hero-scroll-cue i {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(116, 164, 222, .36);
+  border-radius: 999px;
+}
+.hero-scroll-cue i::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  border-right: 1.5px solid #71a7ec;
+  border-bottom: 1.5px solid #71a7ec;
+  transform: translateX(-50%) rotate(45deg);
+  animation: scrollCue 1.9s ease-in-out infinite;
+}
+@keyframes scrollCue {
+  0%, 100% { transform: translate(-50%, 0) rotate(45deg); opacity: .55; }
+  50% { transform: translate(-50%, 8px) rotate(45deg); opacity: 1; }
+}
+
+.workflow-nav-bar {
+  --stage-progress: 0%;
+  position: relative;
+}
+.workflow-nav-bar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: var(--stage-progress);
+  height: 2px;
+  background: linear-gradient(90deg, #2f81ff, #79b7ff);
+  box-shadow: 0 0 18px rgba(47, 129, 255, .45);
+  transition: width .45s cubic-bezier(.2,.75,.2,1);
+  pointer-events: none;
+}
+.workflow-tab-btn::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(108, 168, 244, .45), transparent);
+  opacity: 0;
+  transform: scaleX(.45);
+  transition: opacity .25s ease, transform .25s ease;
+}
+.workflow-tab-btn:hover::before,
+.workflow-tab-btn.active::before { opacity: 1; transform: scaleX(1); }
+
+.module-card,
+.progress-column,
+.collab-card,
+.credential-item,
+.pillar-card,
+.ieai-architecture-card,
+.facts-card {
+  will-change: transform;
+}
+.module-card::after,
+.collab-card::after,
+.credential-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: radial-gradient(circle at var(--spot-x, 50%) var(--spot-y, 50%), rgba(78, 148, 255, .11), transparent 34%);
+  opacity: 0;
+  transition: opacity .24s ease;
+}
+.module-card:hover::after,
+.module-card.active::after,
+.collab-card:hover::after,
+.credential-item:hover::after { opacity: 1; }
+
+.back-to-top {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 90;
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(119, 167, 229, .28);
+  border-radius: 14px;
+  background: rgba(7, 21, 42, .9);
+  color: #dcecff;
+  box-shadow: 0 16px 44px rgba(0,0,0,.22);
+  backdrop-filter: blur(16px);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity .22s ease, transform .22s ease, visibility .22s ease, border-color .22s ease;
+}
+.back-to-top:hover { border-color: rgba(96, 159, 244, .6); }
+.back-to-top.is-visible { opacity: 1; visibility: visible; transform: translateY(0); }
+.back-to-top span { font-size: 1.15rem; }
+
+/* Better first-paint resilience: headings never wait on JS reveal. */
+.section-head,
+.opportunity-copy,
+.ieai-overview-copy,
+.ieai-architecture-card { opacity: 1; transform: none; }
+
+@media (max-width: 720px) {
+  .hero-scroll-cue { margin-top: 18px; }
+  .back-to-top { right: 14px; bottom: 14px; width: 44px; height: 44px; }
+  .workflow-nav-bar::after { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-scroll-cue i::before { animation: none !important; }
+  .workflow-nav-bar::after { transition: none !important; }
+}
+</style>
+
+  <!-- Schema.org JSON-LD Structured Data -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -37,11 +2610,20 @@
         "@id":"https://iexpressionsllc.com/#organization",
         "name":"Infinite Expressions LLC",
         "url":"https://iexpressionsllc.com/",
-        "logo":"https://iexpressionsllc.com/brand-mark.svg",
+        "logo":"https://iexpressionsllc.comdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkluZmluaXRlIEV4cHJlc3Npb25zIG1hcmsiPgogIDxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzFlNzNmZiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2E3YjBiOCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiByeD0iMjYiIGZpbGw9IiMwNzFiMzYiLz4KICA8cGF0aCBkPSJNMzMgNjRjMC0xNSA5LTI1IDIxLTI1IDE0IDAgMjIgMTYgMzEgMjkgNSA3IDkgMTIgMTQgMTIgNiAwIDEwLTYgMTAtMTZzLTQtMTYtMTAtMTZjLTUgMC05IDUtMTQgMTJsLTggMTJjLTkgMTMtMTYgMTctMjMgMTctMTIgMC0yMS0xMC0yMS0yNXptMTIgMGMwIDEwIDQgMTUgMTAgMTUgNSAwIDktNSAxNC0xMmw4LTEyYzgtMTIgMTUtMTggMjMtMTggMTMgMCAyMiAxMSAyMiAyN3MtOSAyNy0yMiAyN2MtMTIgMC0yMC0xMS0yOC0yMy03LTEwLTEyLTE5LTE4LTE5LTYgMC0xMCA2LTEwIDE1eiIgZmlsbD0idXJsKCNnKSIvPgo8L3N2Zz4K",
         "email":"james@iexpressionsllc.com",
         "description":"Founder-led medical-technology research and development focused on human-supervised AI-assisted digital facial-prosthetic workflows.",
-        "founder":{"@type":"Person","name":"James E. McCord Jr."},
-        "address":{"@type":"PostalAddress","addressLocality":"Lakewood","addressRegion":"CO","addressCountry":"US"},
+        "founder":{
+          "@type":"Person",
+          "name":"James E. McCord Jr.",
+          "jobTitle":"Founder · Patient Advocate · Technical Lead"
+        },
+        "address":{
+          "@type":"PostalAddress",
+          "addressLocality":"Lakewood",
+          "addressRegion":"CO",
+          "addressCountry":"US"
+        },
         "sameAs":["https://github.com/InfiniteExpressionsLLC"]
       },
       {
@@ -57,434 +2639,1358 @@
   </script>
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
+<a class="skip-link" href="#main">Skip to main content</a>
 
-<header class="site-header">
+<!-- Site Navigation Header -->
+<header class="site-header" id="site-header">
   <div class="wrap nav">
-    <a class="brand" href="#top" aria-label="Infinite Expressions home">
-      <img src="/brand-mark.svg" width="44" height="44" alt="">
+    <a class="brand" href="#top" aria-label="Infinite Expressions Home">
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkluZmluaXRlIEV4cHJlc3Npb25zIG1hcmsiPgogIDxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzFlNzNmZiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2E3YjBiOCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiByeD0iMjYiIGZpbGw9IiMwNzFiMzYiLz4KICA8cGF0aCBkPSJNMzMgNjRjMC0xNSA5LTI1IDIxLTI1IDE0IDAgMjIgMTYgMzEgMjkgNSA3IDkgMTIgMTQgMTIgNiAwIDEwLTYgMTAtMTZzLTQtMTYtMTAtMTZjLTUgMC05IDUtMTQgMTJsLTggMTJjLTkgMTMtMTYgMTctMjMgMTctMTIgMC0yMS0xMC0yMS0yNXptMTIgMGMwIDEwIDQgMTUgMTAgMTUgNSAwIDktNSAxNC0xMmw4LTEyYzgtMTIgMTUtMTggMjMtMTggMTMgMCAyMiAxMSAyMiAyN3MtOSAyNy0yMiAyN2MtMTIgMC0yMC0xMS0yOC0yMy03LTEwLTEyLTE5LTE4LTE5LTYgMC0xMCA2LTEwIDE1eiIgZmlsbD0idXJsKCNnKSIvPgo8L3N2Zz4K" width="44" height="44" alt="Infinite Expressions Brand Mark">
       <span class="brand-copy">
         <strong>Infinite Expressions</strong>
         <small>Digital Facial Prosthetics R&amp;D</small>
       </span>
     </a>
 
-    <button class="menu-btn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-navigation">
+    <button class="menu-btn" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-navigation">
       <span></span><span></span><span></span>
     </button>
 
-    <nav class="nav-links" id="main-navigation" aria-label="Main navigation">
+    <nav class="nav-links" id="main-navigation" aria-label="Main Navigation">
       <a href="#technology">Technology</a>
-      <a href="#ieai">IEAI</a>
-      <a href="#progress">Progress</a>
-      <a href="#founder">Founder</a>
-      <a href="#collaborate">Collaborate</a>
+      <a href="#ieai">IEAI System</a>
+      <a href="#progress">R&amp;D Progress</a>
+      <a href="#founder">Founder Story</a>
+      <a href="#collaborate">Partnerships</a>
       <a class="nav-cta" href="#contact">Contact</a>
     </nav>
   </div>
+  <div class="page-progress" aria-hidden="true"><span></span></div>
 </header>
 
 <main id="main">
-  <section class="hero" id="top">
+  <!-- HERO SECTION -->
+  <section class="hero" id="top" aria-labelledby="hero-title">
     <div class="hero-grid-pattern" aria-hidden="true"></div>
     <div class="wrap hero-grid">
       <div class="hero-copy-block">
-        <div class="eyebrow">
+        <div class="kicker">
           <span class="status-dot" aria-hidden="true"></span>
-          Founder-led MedTech R&amp;D · Lakewood, Colorado
+          Founder-Led MedTech R&amp;D · Lakewood, Colorado
         </div>
 
-        <h1>A digital path to <span>better facial prosthetics.</span></h1>
+        <h1 id="hero-title">
+          Reengineering the path to <span>custom facial prosthetics.</span>
+        </h1>
 
         <p class="hero-copy">
           Infinite Expressions is developing a moldless, human-supervised digital workflow connecting
           high-resolution 3D facial capture, <strong>IEAI-assisted engineering</strong>, professional CAD validation,
-          and silicone additive-manufacturing research.
+          simulation and dimensional-review research, and silicone additive-manufacturing research.
         </p>
 
+        <ul class="hero-workflow-bullets" aria-label="Core Engineering Facets">
+          <li>High-Resolution 3D Facial Capture</li>
+          <li>IEAI-Assisted Engineering</li>
+          <li>Professional CAD Validation</li>
+          <li>Simulation &amp; Dimensional Review R&amp;D</li>
+          <li>Silicone Additive-Manufacturing R&amp;D</li>
+          <li>Human-in-the-Loop Supervision</li>
+        </ul>
+
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#technology">See the digital workflow</a>
-          <a class="btn btn-secondary" href="#collaborate">Explore collaboration</a>
+          <a class="btn btn-primary" href="#technology">Explore the Technology</a>
+          <a class="btn btn-secondary" href="#collaborate">Partner With Us</a>
         </div>
 
-        <div class="stage-note">
-          <span>Research-stage company</span>
-          <p>Building technical feasibility, validation evidence, infrastructure, and partner relationships. Infinite Expressions is not currently offering clinical prosthetic services.</p>
+        <!-- Research Stage Disclosure Banner -->
+        <div class="research-disclosure-card" role="note" aria-label="Research Stage Disclosure">
+          <span class="research-disclosure-badge">Research-Stage</span>
+          <p>
+            Building technical feasibility, validation evidence, infrastructure, and partner relationships.
+            <strong>Infinite Expressions is not currently offering clinical prosthetic services.</strong>
+          </p>
         </div>
+
+        <a class="hero-scroll-cue" href="#opportunity" aria-label="Continue to the clinical reality and opportunity section">
+          <span>Explore the engineering story</span>
+          <i aria-hidden="true"></i>
+        </a>
       </div>
 
-      <div class="hero-visual" aria-label="Illustration of the Infinite Expressions digital facial-prosthetics workflow">
+      <!-- Hero Technical Metrology Visual -->
+      <div class="hero-visual-card" data-tilt aria-label="Illustrative 3D facial engineering visualization">
         <div class="visual-topline">
-          <span>Digital engineering thread</span>
-          <strong>Human supervised</strong>
+          <div class="visual-mode">
+            <span class="visual-mode-pulse" aria-hidden="true"></span>
+            <span>DIGITAL THREAD INSPECTION</span>
+          </div>
+          <span class="visual-telemetry-tag">ILLUSTRATIVE · HUMAN SUPERVISED</span>
         </div>
 
-        <div class="scan-stage">
-          <svg class="face-mesh" viewBox="0 0 420 440" role="img" aria-label="Abstract facial scan mesh">
+        <div class="metrology-stage">
+          <!-- Engineering SVG Face Mesh with Scanning Horizon and Coordinates -->
+          <svg class="mesh-svg" viewBox="0 0 440 460" role="img" aria-label="Point Cloud Facial Metrology Mesh">
             <defs>
-              <linearGradient id="meshStroke" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#7fd0ff"/>
-                <stop offset="55%" stop-color="#7b95ff"/>
-                <stop offset="100%" stop-color="#bfd4e8"/>
+              <linearGradient id="meshGradient" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#4f9eff"/>
+                <stop offset="60%" stop-color="#2b7fff"/>
+                <stop offset="100%" stop-color="#8ba7cc"/>
               </linearGradient>
-              <radialGradient id="faceGlow" cx="50%" cy="42%" r="55%">
-                <stop offset="0%" stop-color="#2d79c7" stop-opacity=".35"/>
-                <stop offset="100%" stop-color="#2d79c7" stop-opacity="0"/>
+              <radialGradient id="meshCenterGlow" cx="50%" cy="45%" r="50%">
+                <stop offset="0%" stop-color="#2b7fff" stop-opacity="0.22"/>
+                <stop offset="100%" stop-color="#2b7fff" stop-opacity="0"/>
               </radialGradient>
+              <linearGradient id="laserBeamGrad" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#4f9eff" stop-opacity="0"/>
+                <stop offset="50%" stop-color="#4f9eff" stop-opacity="0.95"/>
+                <stop offset="100%" stop-color="#4f9eff" stop-opacity="0"/>
+              </linearGradient>
             </defs>
-            <ellipse cx="210" cy="205" rx="155" ry="184" fill="url(#faceGlow)"/>
-            <g fill="none" stroke="url(#meshStroke)" stroke-width="1.25" opacity=".75">
-              <path d="M210 36 C142 38 91 84 73 151 C55 220 78 305 132 360 C155 383 182 399 210 405 C238 399 265 383 288 360 C342 305 365 220 347 151 C329 84 278 38 210 36Z"/>
-              <path d="M210 36 C178 92 168 155 171 212 C175 283 188 347 210 405"/>
-              <path d="M210 36 C242 92 252 155 249 212 C245 283 232 347 210 405"/>
-              <path d="M95 120 C139 105 175 106 210 115 C245 106 281 105 325 120"/>
-              <path d="M74 165 C126 148 167 151 210 163 C253 151 294 148 346 165"/>
-              <path d="M69 215 C124 198 165 201 210 213 C255 201 296 198 351 215"/>
-              <path d="M77 266 C129 252 168 254 210 266 C252 254 291 252 343 266"/>
-              <path d="M96 315 C139 303 174 305 210 316 C246 305 281 303 324 315"/>
-              <path d="M128 355 C158 346 184 347 210 355 C236 347 262 346 292 355"/>
-              <path d="M120 164 C141 175 160 176 180 165"/>
-              <path d="M240 165 C260 176 279 175 300 164"/>
-              <path d="M176 224 C189 239 231 239 244 224"/>
-              <path d="M165 287 C188 300 232 300 255 287"/>
-              <path d="M181 303 C197 311 223 311 239 303"/>
-              <path d="M210 115 L210 228"/>
-              <path d="M165 287 L120 315"/>
-              <path d="M255 287 L300 315"/>
+
+            <!-- Orthographic Grid Crosshairs -->
+            <g stroke="rgba(255,255,255,0.06)" stroke-width="1" stroke-dasharray="4 4">
+              <line x1="220" y1="20" x2="220" y2="440"/>
+              <line x1="30" y1="230" x2="410" y2="230"/>
+              <circle cx="220" cy="230" r="180" fill="none"/>
             </g>
-            <g fill="#9dd9ff">
-              <circle cx="120" cy="164" r="3.3"/><circle cx="180" cy="165" r="3.3"/>
-              <circle cx="240" cy="165" r="3.3"/><circle cx="300" cy="164" r="3.3"/>
-              <circle cx="210" cy="115" r="3.3"/><circle cx="210" cy="228" r="3.3"/>
-              <circle cx="176" cy="224" r="3.3"/><circle cx="244" cy="224" r="3.3"/>
-              <circle cx="165" cy="287" r="3.3"/><circle cx="255" cy="287" r="3.3"/>
+
+            <!-- Base Anatomical Glow -->
+            <ellipse cx="220" cy="225" rx="160" ry="195" fill="url(#meshCenterGlow)"/>
+
+            <!-- Topological Wireframe Mesh Contours -->
+            <g fill="none" stroke="url(#meshGradient)" stroke-width="1.3" opacity="0.82">
+              <!-- Outer Craniofacial Outline -->
+              <path d="M220 40 C148 42 94 92 76 162 C58 234 82 322 138 380 C162 405 190 422 220 428 C250 422 278 405 302 380 C358 322 382 234 364 162 C346 92 292 42 220 40Z"/>
+              
+              <!-- Sagittal and Midline Curves -->
+              <path d="M220 40 C186 100 176 168 179 230 C183 306 197 372 220 428"/>
+              <path d="M220 40 C254 100 264 168 261 230 C257 306 243 372 220 428"/>
+
+              <!-- Transverse Craniofacial Latitude Curves -->
+              <path d="M98 128 C144 112 182 113 220 123 C258 113 296 112 342 128"/>
+              <path d="M78 176 C132 158 174 161 220 174 C266 161 308 158 362 176"/>
+              <path d="M72 230 C130 212 173 215 220 228 C267 215 310 212 368 230"/>
+              <path d="M82 284 C136 270 176 272 220 284 C264 272 304 270 358 284"/>
+              <path d="M102 336 C146 324 182 326 220 338 C258 326 294 324 338 336"/>
+              <path d="M134 378 C166 368 193 370 220 378 C247 370 274 368 306 378"/>
+
+              <!-- Maxillofacial / Periorbital / Nasolabial Structural Loops -->
+              <path d="M126 176 C148 188 168 189 190 177"/>
+              <path d="M250 177 C272 189 292 188 314 176"/>
+              <path d="M184 240 C198 256 242 256 256 240"/>
+              <path d="M172 306 C196 320 244 320 268 306"/>
+              <path d="M189 324 C206 332 234 332 251 324"/>
+
+              <!-- Nasal Bridge & Glabellar Struts -->
+              <path d="M220 123 L220 244"/>
+              <path d="M172 306 L126 336"/>
+              <path d="M268 306 L314 336"/>
+            </g>
+
+            <!-- Anatomical Feature Landmark Nodes -->
+            <g fill="#70b5ff">
+              <!-- Glabella / Nasion -->
+              <circle cx="220" cy="123" r="3.8"/>
+              <!-- Pronasale (Nasal Tip) -->
+              <circle cx="220" cy="244" r="4.2"/>
+              <!-- Subnasale -->
+              <circle cx="220" cy="272" r="3.5"/>
+              <!-- Cheilion / Perioral -->
+              <circle cx="172" cy="306" r="3.5"/>
+              <circle cx="268" cy="306" r="3.5"/>
+              <!-- Exocanthion / Outer Eye -->
+              <circle cx="126" cy="176" r="3.5"/>
+              <circle cx="314" cy="176" r="3.5"/>
+              <!-- Endocanthion / Inner Eye -->
+              <circle cx="190" cy="177" r="3.5"/>
+              <circle cx="250" cy="177" r="3.5"/>
+              <!-- Pogonion (Chin) -->
+              <circle cx="220" cy="378" r="3.8"/>
+            </g>
+
+            <!-- Animated Laser Metrology Sweep Line -->
+            <g class="scan-beam">
+              <line x1="40" y1="220" x2="400" y2="220" stroke="url(#laserBeamGrad)" stroke-width="2.5"/>
+              <circle cx="220" cy="220" r="4" fill="#fff" opacity="0.9"/>
             </g>
           </svg>
 
-          <div class="scan-label label-a"><span>01</span> 3D capture</div>
-          <div class="scan-label label-b"><span>02</span> IEAI analysis</div>
-          <div class="scan-label label-c"><span>03</span> CAD validation</div>
-          <div class="scan-label label-d"><span>04</span> Manufacturing R&amp;D</div>
+          <!-- Precision Engineering Callouts -->
+          <div class="metrology-callout callout-nasion" aria-hidden="true">
+            <strong>Landmark Node</strong> | Reference
+          </div>
+          <div class="metrology-callout callout-pronasale" aria-hidden="true">
+            <strong>Surface Node</strong> | Illustrative
+          </div>
+          <div class="metrology-callout callout-subnasale" aria-hidden="true">
+            <strong>Boundary Trace</strong> | Illustrative
+          </div>
+          <div class="metrology-callout callout-cad" aria-hidden="true">
+            <strong>CAD Boundary</strong> | Concept View
+          </div>
         </div>
 
-        <div class="visual-footer">
-          <span><i></i> Traceable geometry</span>
-          <span><i></i> Expert review</span>
-          <span><i></i> Validation first</span>
+        <!-- Telemetry Bottom Bar -->
+        <div class="visual-hud" aria-label="Metrology System Readouts">
+          <div class="hud-item">
+            <span>SIMULATED TELEMETRY</span>
+            <strong data-hud="coord">Mesh reference · illustrative</strong>
+          </div>
+          <div class="hud-item">
+            <span>QUALITY CHECK</span>
+            <strong data-hud="dev">Tolerance framework · R&amp;D</strong>
+          </div>
+          <div class="hud-item">
+            <span>GOVERNANCE</span>
+            <strong>Traceability architecture</strong>
+          </div>
         </div>
+        <p class="visual-disclaimer">Illustrative engineering interface — not patient data, measured tolerances, or a clinical result.</p>
       </div>
     </div>
   </section>
 
-  <section class="credibility" aria-label="Company highlights">
+  <!-- CREDIBILITY HIGHLIGHTS BAR -->
+  <section class="credibility" aria-label="Company Credentials and Program Access">
     <div class="wrap credibility-grid">
-      <div class="credential">
-        <span>IP</span>
-        <div><strong>Patent Pending</strong><small>U.S. nonprovisional application filed</small></div>
-      </div>
-      <div class="credential">
-        <span>AI</span>
-        <div><strong>NVIDIA Inception</strong><small>Program member</small></div>
-      </div>
-      <div class="credential">
-        <span>Cloud</span>
-        <div><strong>AWS Activate</strong><small>Startup resources approved</small></div>
-      </div>
-      <div class="credential">
-        <span>Model</span>
-        <div><strong>Founder-led</strong><small>A company of one built from lived experience</small></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="intro-section">
-    <div class="wrap split-heading">
-      <div>
-        <div class="kicker">The opportunity</div>
-        <h2>Move more of the workflow into a controlled digital environment.</h2>
-      </div>
-      <div class="lead-copy">
-        <p>Traditional facial-prosthetic fabrication can require physical impressions, handcrafted sculpting, mold-making, repeated visits, and access to scarce specialist expertise.</p>
-        <p><strong>Infinite Expressions is investigating a different path:</strong> preserve qualified human judgment while making the digital engineering steps more repeatable, traceable, and easier to validate.</p>
-      </div>
-    </div>
-
-    <div class="wrap problem-grid">
-      <article class="problem-card">
-        <span class="number">01</span>
-        <h3>Patient burden</h3>
-        <p>Physical impressions, repeat appointments, travel, and replacement cycles can add time, discomfort, and expense.</p>
-      </article>
-      <article class="problem-card">
-        <span class="number">02</span>
-        <h3>Manual variability</h3>
-        <p>Highly skilled hand processes are difficult to reproduce exactly when geometry must later be revised or replaced.</p>
-      </article>
-      <article class="problem-card">
-        <span class="number">03</span>
-        <h3>Limited access</h3>
-        <p>Specialist availability and geography can make advanced facial-prosthetic care difficult to reach.</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="technology-section" id="technology">
-    <div class="wrap section-heading centered">
-      <div class="kicker light">Proposed digital workflow</div>
-      <h2>One digital thread. Five controlled stages.</h2>
-      <p>The objective is not to replace the specialist. It is to give qualified experts a more consistent engineering environment from capture through manufacturing research.</p>
-    </div>
-
-    <div class="wrap workflow-grid">
-      <article class="workflow-card">
-        <div class="workflow-icon" aria-hidden="true">◎</div>
-        <span>Stage 01</span>
-        <h3>Capture</h3>
-        <p>High-resolution 3D scanning creates a non-contact digital representation of facial geometry.</p>
-      </article>
-      <article class="workflow-card">
-        <div class="workflow-icon" aria-hidden="true">◇</div>
-        <span>Stage 02</span>
-        <h3>Prepare</h3>
-        <p>Geometry is cleaned, aligned, reconstructed, versioned, and prepared for engineering review.</p>
-      </article>
-      <article class="workflow-card">
-        <div class="workflow-icon" aria-hidden="true">⌁</div>
-        <span>Stage 03</span>
-        <h3>Analyze</h3>
-        <p>IEAI research tools are intended to assist with geometry, landmarks, dimensional checks, and documentation.</p>
-      </article>
-      <article class="workflow-card">
-        <div class="workflow-icon" aria-hidden="true">✓</div>
-        <span>Stage 04</span>
-        <h3>Validate</h3>
-        <p>Professional CAD, dimensional review, simulation, and expert judgment support controlled iteration.</p>
-      </article>
-      <article class="workflow-card">
-        <div class="workflow-icon" aria-hidden="true">⬡</div>
-        <span>Stage 05</span>
-        <h3>Manufacture</h3>
-        <p>Silicone-capable additive-manufacturing approaches are evaluated for future production feasibility.</p>
-      </article>
-    </div>
-
-    <div class="wrap thread-strip">
-      <strong>Controlled digital thread</strong>
-      <span>Capture data</span><b>→</b><span>Versioned geometry</span><b>→</b><span>Assisted analysis</span><b>→</b><span>Engineering review</span><b>→</b><span>Validation record</span>
-    </div>
-  </section>
-
-  <section class="ieai-section" id="ieai">
-    <div class="wrap ieai-grid">
-      <div class="ieai-copy">
-        <div class="kicker">IEAI · Infinite Expressions Artificial Intelligence</div>
-        <h2>Specialized AI engineering—not an autonomous clinician.</h2>
-        <p class="large">IEAI is being built as a local-first, human-supervised artificial-intelligence engineering system for the facial-prosthetics workflow.</p>
-        <p>It combines AI models with Infinite Expressions-developed software, deterministic engineering logic, 3D geometry components, project knowledge, provenance and audit controls, data-governance boundaries, and structured validation.</p>
-        <div class="principle">
-          <strong>Core principle</strong>
-          <span>Assist the expert. Preserve traceability. Validate before expanding capability.</span>
+      <div class="credential-item">
+        <div class="credential-badge" aria-hidden="true">IP</div>
+        <div class="credential-copy">
+          <strong>Patent Pending</strong>
+          <small>U.S. nonprovisional application filed</small>
         </div>
       </div>
 
-      <div class="ieai-panels">
-        <article class="ieai-panel">
-          <span class="panel-tag">Current foundation</span>
-          <h3>Engineering controls around the models</h3>
-          <ul>
-            <li>Local-model infrastructure and controlled testing</li>
-            <li>Project knowledge and retrieval systems</li>
-            <li>Audit, provenance, and documentation controls</li>
-            <li>3D engineering and geometry-processing components</li>
-            <li>Privacy and data-governance safeguards</li>
-          </ul>
+      <div class="credential-item">
+        <div class="credential-badge" aria-hidden="true">AI</div>
+        <div class="credential-copy">
+          <strong>NVIDIA Inception</strong>
+          <small>Startup program member</small>
+        </div>
+      </div>
+
+      <div class="credential-item">
+        <div class="credential-badge" aria-hidden="true">AWS</div>
+        <div class="credential-copy">
+          <strong>AWS Activate</strong>
+          <small>Startup compute resources approved</small>
+        </div>
+      </div>
+
+      <div class="credential-item">
+        <div class="credential-badge" aria-hidden="true">R&amp;D</div>
+        <div class="credential-copy">
+          <strong>Founder-Led</strong>
+          <small>Engineered from lived patient experience</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLINICAL REALITY & OPPORTUNITY SECTION -->
+  <section class="opportunity-section" id="opportunity" aria-labelledby="opportunity-title">
+    <div class="wrap">
+      <div class="opportunity-grid">
+        <div class="opportunity-copy">
+          <div class="kicker">Clinical Reality &amp; Opportunity</div>
+          <h2 id="opportunity-title">Moving the workflow into a controlled digital environment.</h2>
+          <p>
+            Custom facial prosthetics for patients recovering from cancer resections, trauma, or congenital differences
+            remain heavily reliant on specialized analog manual craftsmanship.
+          </p>
+          <p>
+            Traditional fabrication can involve contact-based impression materials, handcrafted wax modeling,
+            multi-piece stone mold making, repeated clinical visits, and access to scarce specialist anaplastologists.
+          </p>
+          <p>
+            <strong>Infinite Expressions is investigating a repeatable alternative:</strong> preserve qualified human judgment
+            while transitioning the engineering steps into a controlled, auditable digital thread from non-contact 3D scan
+            through additive-manufacturing research.
+          </p>
+        </div>
+
+        <div class="opportunity-comparison" aria-label="Comparison between Traditional and Digital Methods">
+          <div class="comparison-card current">
+            <div class="comparison-header">
+              <h3>Traditional Fabrication</h3>
+              <span class="comparison-tag">Analog Process</span>
+            </div>
+            <ul>
+              <li>Contact-based physical impressions (discomfort &amp; potential distortion)</li>
+              <li>Hand-sculpted wax patterns that can be difficult to reproduce exactly</li>
+              <li>Multi-piece plaster / stone mold creation</li>
+              <li>Difficult to duplicate or iterate when replacement is needed</li>
+              <li>Limited geographic access to scarce specialist clinicians</li>
+            </ul>
+          </div>
+
+          <div class="comparison-card proposed">
+            <div class="comparison-header">
+              <h3>Controlled Digital Thread</h3>
+              <span class="comparison-tag">Infinite Expressions</span>
+            </div>
+            <ul>
+              <li>Non-contact, high-resolution optical 3D surface scanning</li>
+              <li>Planned IEAI-assisted geometry review and landmark assistance</li>
+              <li>Professional CAD design with versioned geometry and review history</li>
+              <li>Planned dimensional review and tissue-interface simulation research</li>
+              <li>Moldless silicone additive-manufacturing feasibility research</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Problem Pillars Grid -->
+      <div class="pillars-grid">
+        <article class="pillar-card">
+          <span class="pillar-index">01 / BURDEN</span>
+          <h3>Patient Impact &amp; Discomfort</h3>
+          <p>
+            Physical impressions on sensitive or post-surgical facial anatomy can add discomfort, anxiety, and the possibility of tissue deformation.
+            Travel to specialized medical centers for repeated fittings can add financial, logistical, and emotional burden.
+          </p>
         </article>
 
-        <article class="ieai-panel emphasized">
-          <span class="panel-tag">R&amp;D direction</span>
-          <h3>Traceable assistive geometry intelligence</h3>
-          <ul>
-            <li>Scan-quality and geometry review assistance</li>
-            <li>Anatomical evidence and landmark-analysis research</li>
-            <li>Reconstruction and prosthetic-geometry preparation</li>
-            <li>Dimensional checks and manufacturing-readiness review</li>
-            <li>Structured future handoffs into CAD and manufacturing research</li>
-          </ul>
+        <article class="pillar-card">
+          <span class="pillar-index">02 / VARIABILITY</span>
+          <h3>Manual Process Variability</h3>
+          <p>
+            Physical master patterns and molds can be vulnerable to wear or damage and difficult to reproduce exactly.
+            When a prosthesis wears out or is damaged, the entire analog workflow frequently has to start over from scratch.
+          </p>
+        </article>
+
+        <article class="pillar-card">
+          <span class="pillar-index">03 / SCARCITY</span>
+          <h3>Specialist Scarcity</h3>
+          <p>
+            Access to experienced anaplastologists and maxillofacial prosthodontists can be geographically limited.
+            Digital engineering tools could support more structured collaboration, traceability, and expert review across locations.
+          </p>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="progress-section" id="progress">
-    <div class="wrap section-heading">
-      <div class="kicker">Development status · September 2026</div>
-      <h2>Build the evidence first.</h2>
-      <p>Infinite Expressions separates verified progress from planned capability. The company is building the technical foundation required for responsible feasibility testing rather than presenting an unfinished research concept as a finished medical product.</p>
-    </div>
+  <!-- INTERACTIVE TECHNOLOGY WORKFLOW SECTION -->
+  <section class="technology-section" id="technology" aria-labelledby="technology-title">
+    <div class="wrap">
+      <div class="section-head centered">
+        <div class="kicker">Proposed Digital Workflow</div>
+        <h2 id="technology-title">One controlled digital thread. Five engineering stages.</h2>
+        <p>
+          The objective is not to replace the clinician. It is to equip qualified specialists with a rigorous,
+          reproducible engineering platform from patient capture through additive-manufacturing research.
+        </p>
+      </div>
 
-    <div class="wrap progress-grid">
-      <article class="progress-column done">
-        <div class="progress-heading">
-          <span>Verified progress</span>
-          <strong>Foundation established</strong>
+      <!-- 5-Stage Interactive Tabs Nav -->
+      <div class="workflow-nav-bar" role="tablist" aria-label="5-Stage Digital Workflow Steps">
+        <button class="workflow-tab-btn active" role="tab" id="tab-capture" aria-selected="true" aria-controls="workflow-panel" tabindex="0">
+          <span class="tab-stage-num">STAGE 01</span>
+          <span class="tab-stage-title">3D Capture</span>
+        </button>
+
+        <button class="workflow-tab-btn" role="tab" id="tab-ieai" aria-selected="false" aria-controls="workflow-panel" tabindex="-1">
+          <span class="tab-stage-num">STAGE 02</span>
+          <span class="tab-stage-title">IEAI Review</span>
+        </button>
+        <button class="workflow-tab-btn" role="tab" id="tab-cad" aria-selected="false" aria-controls="workflow-panel" tabindex="-1">
+          <span class="tab-stage-num">STAGE 03</span>
+          <span class="tab-stage-title">CAD Modeling</span>
+        </button>
+
+        <button class="workflow-tab-btn" role="tab" id="tab-validation" aria-selected="false" aria-controls="workflow-panel" tabindex="-1">
+          <span class="tab-stage-num">STAGE 04</span>
+          <span class="tab-stage-title">Validation</span>
+        </button>
+
+        <button class="workflow-tab-btn" role="tab" id="tab-additive" aria-selected="false" aria-controls="workflow-panel" tabindex="-1">
+          <span class="tab-stage-num">STAGE 05</span>
+          <span class="tab-stage-title">Additive R&amp;D</span>
+        </button>
+      </div>
+
+      <!-- Dynamic Active Stage Detail Panel -->
+      <div class="workflow-detail-display" id="workflow-panel" role="tabpanel" aria-labelledby="tab-capture">
+        <div class="detail-content">
+          <div class="detail-header">
+            <span class="detail-stage-kicker">Stage 01 · Non-Contact Acquisition</span>
+            <h3>High-Resolution 3D Capture</h3>
+            <div class="detail-subtitle">Non-contact optical and structured-light surface acquisition</div>
+          </div>
+
+          <div class="detail-body">
+            <p>
+              Patient facial topography can be digitized without placing physical impression material on the anatomy, avoiding one source of discomfort and distortion during capture. The resulting digital surface data can establish a baseline reference for subsequent engineering reconstruction and review.
+            </p>
+
+            <div class="detail-specs-grid">
+              <div class="detail-spec-box">
+                <span>Primary Input</span>
+                <strong>Non-contact optical / 3D photogrammetric scans</strong>
+              </div>
+              <div class="detail-spec-box">
+                <span>Key Objective</span>
+                <strong>Accurate surface geometry without tissue deformation</strong>
+              </div>
+              <div class="detail-spec-box">
+                <span>Supervision</span>
+                <strong>Qualified acquisition review &amp; landmark verification</strong>
+              </div>
+              <div class="detail-spec-box">
+                <span>Status Classification</span>
+                <strong>In Development (Authorized maxillofacial data acquired)</strong>
+              </div>
+            </div>
+          </div>
         </div>
-        <ul>
-          <li>Infinite Expressions LLC established</li>
-          <li>U.S. nonprovisional patent application filed</li>
-          <li>NVIDIA Inception program membership</li>
-          <li>AWS Activate startup resources approved</li>
-          <li>Authorized maxillofacial 3D geometry obtained for controlled feasibility work</li>
-          <li>IEAI architecture and local development environment under active development</li>
-        </ul>
-      </article>
 
-      <article class="progress-column next">
-        <div class="progress-heading">
-          <span>Current priorities</span>
-          <strong>Validation and capability</strong>
+        <!-- Schematic Visual Card -->
+        <div class="detail-schematic-wrap">
+          <div class="schematic-topline">
+            <span>PIPELINE SCHEMATIC</span>
+            <span class="schematic-status-pill in-development">In Development</span>
+          </div>
+
+          <div class="schematic-visual">
+            <div class="schematic-icon" aria-hidden="true">◎</div>
+            <p>Point cloud acquisition, surface triangulation, baseline mesh generation.</p>
+          </div>
         </div>
-        <ul>
-          <li>Repeatable 3D-capture and geometry-quality evaluation</li>
-          <li>IEAI architecture, testing, documentation, and validation planning</li>
-          <li>Professional CAD, simulation, metrology, and workflow integration</li>
-          <li>Silicone-capable additive-manufacturing process evaluation</li>
-          <li>Qualified clinical, university, engineering, and materials collaborators</li>
-          <li>Non-dilutive funding, hardware, compute, and startup infrastructure</li>
-        </ul>
-      </article>
+      </div>
 
-      <aside class="facts-card" aria-label="Infinite Expressions company facts">
-        <div class="kicker light">Company snapshot</div>
-        <dl>
-          <div><dt>Stage</dt><dd>Early R&amp;D / feasibility</dd></div>
-          <div><dt>Location</dt><dd>Lakewood, Colorado</dd></div>
-          <div><dt>Focus</dt><dd>Digital facial-prosthetic workflow</dd></div>
-          <div><dt>AI system</dt><dd>IEAI — local-first, human supervised</dd></div>
-          <div><dt>IP</dt><dd>Patent pending</dd></div>
-          <div><dt>Clinical services</dt><dd>Not currently offered</dd></div>
-        </dl>
-      </aside>
+      <!-- Digital Thread Summary Bar -->
+      <div class="digital-thread-bar" aria-label="End-to-End Digital Thread Sequence">
+        <strong>
+          <span class="status-dot" aria-hidden="true"></span>
+          Controlled Digital Thread:
+        </strong>
+        <div class="thread-chain">
+          <span>Capture Data</span>
+          <b>&rarr;</b>
+          <span>Versioned Geometry</span>
+          <b>&rarr;</b>
+          <span>Assisted Analysis</span>
+          <b>&rarr;</b>
+          <span>Engineering Review</span>
+          <b>&rarr;</b>
+          <span>Validation Record</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="founder-section" id="founder">
+  <!-- IEAI SYSTEM SECTION -->
+  <section class="ieai-section" id="ieai" aria-labelledby="ieai-title">
+    <div class="wrap">
+      <div class="ieai-architecture-overview">
+        <div class="ieai-overview-copy">
+          <div class="kicker">Specialized Engineering Intelligence</div>
+          <h2 id="ieai-title">IEAI &mdash; Infinite Expressions Artificial Intelligence</h2>
+          <p>
+            <strong>IEAI is being engineered as a specialized, local-first, human-supervised artificial intelligence system</strong>
+            tailored specifically to the digital facial-prosthetics engineering pipeline.
+          </p>
+          <p>
+            IEAI is not an autonomous clinician, medical diagnostic engine, or unsupervised autonomous design system. It combines AI models with
+            Infinite Expressions-developed software, deterministic engineering logic, 3D geometry components, project knowledge bases,
+            provenance and audit controls, data-governance boundaries, and structured validation.
+          </p>
+
+          <div class="ieai-core-principle-card">
+            <span class="principle-title">Core Operating Mandate</span>
+            <blockquote>
+              &ldquo;Assist the qualified expert. Preserve mathematical traceability. Validate before expanding capability.&rdquo;
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="ieai-architecture-card">
+          <h3>Architectural Guardrails</h3>
+          <ul class="ieai-guardrails-list">
+            <li>
+              <div class="guardrail-icon" aria-hidden="true">&check;</div>
+              <div>
+                <strong>Local-First Architecture:</strong>
+                The system is being designed to keep future patient-sensitive geometry on controlled local infrastructure whenever practical.
+              </div>
+            </li>
+            <li>
+              <div class="guardrail-icon" aria-hidden="true">&check;</div>
+              <div>
+                <strong>Deterministic Engineering Checks:</strong>
+                The architecture combines AI assistance with rule-based geometry checks intended to flag inconsistent or out-of-bounds outputs.
+              </div>
+            </li>
+            <li>
+              <div class="guardrail-icon" aria-hidden="true">&check;</div>
+              <div>
+                <strong>Audit &amp; Provenance Architecture:</strong>
+                Versioning and structured records are being developed to trace geometry changes, automated operations, and human approvals.
+              </div>
+            </li>
+            <li>
+              <div class="guardrail-icon" aria-hidden="true">&check;</div>
+              <div>
+                <strong>Human-in-the-Loop Requirement:</strong>
+                The intended workflow places qualified clinical or engineering review gates between sensitive stages rather than delegating final decisions to AI.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 8 IEAI Capability Modules Grid -->
+      <div class="ieai-modules-head">
+        <div>
+          <div class="kicker">System Capabilities Matrix</div>
+          <h3>Modular Assistive Intelligence</h3>
+        </div>
+        <div class="capability-legend" aria-label="Capability Status Legend">
+          <span class="legend-item"><span class="legend-dot verified"></span> Verified Foundation</span>
+          <span class="legend-item"><span class="legend-dot dev"></span> In Development</span>
+          <span class="legend-item"><span class="legend-dot research"></span> Research Direction</span>
+        </div>
+      </div>
+
+      <div class="modules-grid">
+        <!-- 01 Geometry Analysis -->
+        <article class="module-card" data-module="geometry" tabindex="0" role="button" aria-expanded="false">
+          <span class="module-status-badge dev">In Development</span>
+          <h4>Geometry Analysis</h4>
+          <p>Rule-based review of mesh integrity, surface orientation, topology, and geometry conditions before downstream engineering work.</p>
+        </article>
+
+        <!-- 02 Scan Quality Review -->
+        <article class="module-card" data-module="scan-quality" tabindex="0" role="button" aria-expanded="false">
+          <span class="module-status-badge dev">In Development</span>
+          <h4>Scan Quality Review</h4>
+          <p>Development work toward identifying motion artifacts, occluded regions, and surface noise before CAD handoff.</p>
+        </article>
+
+        <!-- 03 Landmark & Dimensional Assistance -->
+        <article class="module-card" data-module="landmarks" tabindex="0" role="button" aria-expanded="false">
+          <span class="module-status-badge dev">In Development</span>
+          <h4>Landmark &amp; Dimensional Assistance</h4>
+          <p>Research and testing around anatomical reference-point assistance to support—not replace—qualified boundary review.</p>
+        </article>
+
+        <!-- 04 Fit Analysis Research -->
+        <article class="module-card" data-module="fit" tabindex="0" role="button" aria-expanded="false">
+          <span class="module-status-badge research">Research Direction</span>
+          <h4>Fit Analysis Research</h4>
+          <p>Future research may evaluate margin seating and interface clearance against reference anatomy to help identify potential fit issues before fabrication.</p>
+        </article>
+
+        <!-- 05 Motion Analysis Research -->
+        <article class="module-card" data-module="motion" tabindex="0" role="button" aria-expanded="false">
+          <span class="module-status-badge research">Research Direction</span>
+          <h4>Motion Analysis Research</h4>
+          <p>Future research may explore dynamic capture or simulation to study how surrounding facial movement could affect prosthesis-interface behavior.</p>
+        </article>
+
+        <!-- 06 Manufacturing Readiness -->
+        <article class="module-card" data-module="manufacturing" tabindex="0" role="button" aria-expanded="false">
+          <span class="module-status-badge dev">In Development</span>
+          <h4>Manufacturing Readiness</h4>
+          <p>Rule-based checks are being developed for geometry, wall-thickness, and manufacturing-readiness constraints.</p>
+        </article>
+
+        <!-- 07 Provenance & Audit Trail -->
+        <article class="module-card" data-module="provenance" tabindex="0" role="button" aria-expanded="false">
+          <span class="module-status-badge dev">In Development</span>
+          <h4>Provenance &amp; Audit Trail</h4>
+          <p>Structured versioning and traceability controls are being developed to record source geometry, automated operations, revisions, and human review.</p>
+        </article>
+
+        <!-- 08 Local Processing & Privacy -->
+        <article class="module-card" data-module="local" tabindex="0" role="button" aria-expanded="false">
+          <span class="module-status-badge verified">Verified Foundation</span>
+          <h4>Local Processing Foundation</h4>
+          <p>Local AI development infrastructure is operational. Future handling of patient-sensitive geometry will require additional security, privacy, and compliance validation.</p>
+        </article>
+      </div>
+
+      <div class="module-explorer" id="module-explorer" aria-live="polite">
+        <div class="module-explorer-copy">
+          <span class="module-explorer-kicker">Capability explorer</span>
+          <h4 data-module-title>Geometry Analysis</h4>
+          <p data-module-summary>Select any capability above to see what it means, its maturity level, and the evidence boundary for the current R&amp;D stage.</p>
+        </div>
+        <div class="module-explorer-meta">
+          <span data-module-status class="module-status-badge dev">In Development</span>
+          <strong data-module-proof>Engineering rules and test harnesses are under active development.</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEVELOPMENT STATUS SECTION -->
+  <section class="progress-section" id="progress" aria-labelledby="progress-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Technical Maturity &amp; Roadmap</div>
+        <h2 id="progress-title">Build the evidence first.</h2>
+        <p>
+          Infinite Expressions strictly separates verified progress from planned capability. The company is actively building
+          the engineering evidence required for responsible feasibility testing rather than marketing an unfinished research concept.
+        </p>
+      </div>
+
+      <div class="status-filter" role="group" aria-label="Highlight roadmap status">
+        <button type="button" class="status-filter-btn active" data-status-filter="all" aria-pressed="true">All stages</button>
+        <button type="button" class="status-filter-btn" data-status-filter="verified" aria-pressed="false">Verified</button>
+        <button type="button" class="status-filter-btn" data-status-filter="in-development" aria-pressed="false">In development</button>
+        <button type="button" class="status-filter-btn" data-status-filter="planned" aria-pressed="false">Research direction</button>
+      </div>
+
+      <div class="progress-grid">
+        <!-- Col 1: Verified -->
+        <div class="progress-column verified">
+          <div class="progress-column-header">
+            <span class="progress-column-status">Status: Verified</span>
+            <h3>Milestones Established</h3>
+          </div>
+          <ul class="progress-list">
+            <li>Infinite Expressions LLC legally established in Colorado</li>
+            <li>U.S. nonprovisional patent application filed and pending</li>
+            <li>NVIDIA Inception program membership accepted</li>
+            <li>AWS Activate startup resources approved</li>
+            <li>Authorized maxillofacial 3D geometry obtained for feasibility work</li>
+            <li>Local AI development environment and model infrastructure operational</li>
+          </ul>
+        </div>
+
+        <!-- Col 2: In Development -->
+        <div class="progress-column in-development">
+          <div class="progress-column-header">
+            <span class="progress-column-status">Status: In Development</span>
+            <h3>Active Engineering Priorities</h3>
+          </div>
+          <ul class="progress-list">
+            <li>Repeatable 3D-capture and geometry-quality evaluation pipeline</li>
+            <li>IEAI deterministic engineering rules and test harnesses</li>
+            <li>Professional CAD handoff protocols and version-control workflow</li>
+            <li>Dimensional inspection and metrology methodology development</li>
+            <li>Silicone-capable additive-manufacturing process evaluation</li>
+            <li>Collaborator outreach with qualified academic and clinical teams</li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Research Direction / Planned -->
+        <div class="progress-column planned">
+          <div class="progress-column-header">
+            <span class="progress-column-status">Status: Research Direction</span>
+            <h3>Planned Horizons</h3>
+          </div>
+          <ul class="progress-list">
+            <li>Potential structured feasibility studies with prosthodontists and other qualified specialists</li>
+            <li>Direct silicone 3D printing parameter optimization for facial elastomers</li>
+            <li>Research into automated defect detection and interface-fit analysis</li>
+            <li>Regulatory submission roadmap and QMS alignment</li>
+            <li>Reference-platform hardware and compute benchmarking</li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Side Snapshot Card -->
+        <aside class="facts-card" aria-label="Infinite Expressions Entity Snapshot">
+          <div class="kicker light">Entity Snapshot</div>
+          <h3>Corporate Facts</h3>
+          <dl class="facts-list">
+            <div>
+              <dt>Development Stage</dt>
+              <dd>Early R&amp;D / Feasibility</dd>
+            </div>
+            <div>
+              <dt>Headquarters</dt>
+              <dd>Lakewood, Colorado (USA)</dd>
+            </div>
+            <div>
+              <dt>Core Mission</dt>
+              <dd>Digital Facial-Prosthetic Workflow</dd>
+            </div>
+            <div>
+              <dt>AI Architecture</dt>
+              <dd>IEAI — Local-First, Human Supervised</dd>
+            </div>
+            <div>
+              <dt>Intellectual Property</dt>
+              <dd>Patent Pending (Nonprovisional Filed)</dd>
+            </div>
+            <div>
+              <dt>Clinical Operations</dt>
+              <dd>Not Currently Offered</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDER STORY SECTION -->
+  <section class="founder-section" id="founder" aria-labelledby="founder-title">
     <div class="wrap founder-grid">
-      <div class="founder-visual">
-        <div class="founder-mark-wrap">
-          <img src="/brand-mark.svg" width="112" height="112" alt="">
+      <div class="founder-visual-panel">
+        <div class="founder-brand-frame">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkluZmluaXRlIEV4cHJlc3Npb25zIG1hcmsiPgogIDxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzFlNzNmZiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2E3YjBiOCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiByeD0iMjYiIGZpbGw9IiMwNzFiMzYiLz4KICA8cGF0aCBkPSJNMzMgNjRjMC0xNSA5LTI1IDIxLTI1IDE0IDAgMjIgMTYgMzEgMjkgNSA3IDkgMTIgMTQgMTIgNiAwIDEwLTYgMTAtMTZzLTQtMTYtMTAtMTZjLTUgMC05IDUtMTQgMTJsLTggMTJjLTkgMTMtMTYgMTctMjMgMTctMTIgMC0yMS0xMC0yMS0yNXptMTIgMGMwIDEwIDQgMTUgMTAgMTUgNSAwIDktNSAxNC0xMmw4LTEyYzgtMTIgMTUtMTggMjMtMTggMTMgMCAyMiAxMSAyMiAyN3MtOSAyNy0yMiAyN2MtMTIgMC0yMC0xMS0yOC0yMy03LTEwLTEyLTE5LTE4LTE5LTYgMC0xMCA2LTEwIDE1eiIgZmlsbD0idXJsKCNnKSIvPgo8L3N2Zz4K" width="84" height="84" alt="Infinite Expressions Brand Emblem">
         </div>
-        <blockquote>“This company exists because I have lived the problem from the patient side and believe modern engineering can help build a better path.”</blockquote>
-        <div class="founder-signoff">
+        <blockquote class="founder-quote">
+          &ldquo;This company exists because I have lived the problem from the patient side and believe modern engineering can help build a better path.&rdquo;
+        </blockquote>
+        <div class="founder-credentials">
           <strong>James E. McCord Jr.</strong>
           <span>Founder · Patient Advocate · Technical Lead</span>
         </div>
       </div>
 
       <div class="founder-copy">
-        <div class="kicker">Founder story</div>
-        <h2>Built from lived experience and engineering experience.</h2>
-        <p><strong>James E. McCord Jr.</strong> is the founder, patient advocate, and technical lead behind Infinite Expressions LLC. After a lifetime involving 206 surgeries—including 198 between ages 15 and 21—and later becoming a facial-prosthesis user himself, he began developing Infinite Expressions around a practical question:</p>
-        <p class="founder-question">Can modern 3D scanning, AI-assisted engineering, and additive manufacturing make the path to a custom facial prosthesis more accessible, repeatable, and patient-centered?</p>
-        <p>James also brings hands-on experience in CAD, 3D modeling, 3D printing, and technical design. Infinite Expressions is intentionally transparent about its stage: a founder-led R&amp;D company building the technical foundation, evidence, validation plan, and partnerships required to test the concept responsibly.</p>
+        <div class="kicker">Founder Perspective</div>
+        <h2 id="founder-title">Built from lived patient experience and technical engineering.</h2>
+        <p>
+          <strong>James E. McCord Jr.</strong> is the founder, patient advocate, and technical lead behind Infinite Expressions LLC.
+          Following a medical journey that included <strong>206 lifetime surgeries</strong>—with 198 procedures performed between
+          the ages of 15 and 21—and later becoming a facial-prosthesis user himself, he experienced firsthand the physical,
+          emotional, and logistical friction of traditional analog prosthesis fabrication.
+        </p>
 
-        <div class="founder-stats">
-          <div><strong>206</strong><span>Lifetime surgeries shaping the founder perspective</span></div>
-          <div><strong>CAD + 3D</strong><span>Hands-on technical design and additive-manufacturing experience</span></div>
-          <div><strong>1 mission</strong><span>Make advanced facial prosthetics more accessible and repeatable</span></div>
+        <p class="founder-question-callout">
+          &ldquo;Can modern 3D scanning, AI-assisted engineering, and additive manufacturing make the path to a custom facial prosthesis more accessible, repeatable, and patient-centered?&rdquo;
+        </p>
+
+        <p>
+          Coupled with hands-on experience in CAD modeling, 3D printing, and technical design, James founded Infinite Expressions
+          to address these challenges systemically. The company is transparent about its stage: a focused R&amp;D effort
+          establishing the engineering rigor, validation evidence, and specialized partnerships required to bring
+          digital facial prosthetics from concept to reality.
+        </p>
+
+        <div class="founder-stats-strip">
+          <div class="founder-stat-item">
+            <strong>206</strong>
+            <span>Surgeries shaping lived patient perspective</span>
+          </div>
+          <div class="founder-stat-item">
+            <strong>CAD + 3D</strong>
+            <span>Hands-on modeling &amp; technical fabrication experience</span>
+          </div>
+          <div class="founder-stat-item">
+            <strong>1 Mission</strong>
+            <span>Engineering a repeatable digital workflow</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="collab-section" id="collaborate">
-    <div class="wrap section-heading centered">
-      <div class="kicker">Collaboration</div>
-      <h2>The next stage depends on the right partners.</h2>
-      <p>Infinite Expressions is seeking organizations that can help build, test, validate, and scale the technical foundation responsibly.</p>
-    </div>
+  <!-- PARTNERSHIP & COLLABORATION SECTION -->
+  <section class="collab-section" id="collaborate" aria-labelledby="collab-title">
+    <div class="wrap">
+      <div class="section-head centered">
+        <div class="kicker">Collaborate with Us</div>
+        <h2 id="collab-title">Help Build the Platform. Become Part of Its Future.</h2>
+        <p>
+          Advancing human-supervised digital facial prosthetics requires deep collaboration across clinical disciplines,
+          software engineering, metrology, and materials science. We invite aligned organizations to explore collaborative avenues.
+        </p>
+      </div>
 
-    <div class="wrap collab-grid">
-      <article class="collab-card">
-        <span class="collab-label">Research</span>
-        <h3>Clinical &amp; academic collaborators</h3>
-        <p>Maxillofacial prosthodontics, anaplastology, biomedical engineering, imaging, materials science, human factors, and translational research.</p>
-        <a href="mailto:james@iexpressionsllc.com?subject=Research%20Collaboration%20with%20Infinite%20Expressions">Discuss research collaboration <span>→</span></a>
-      </article>
+      <div class="collab-pathways-grid">
+        <!-- Pathway 01 -->
+        <article class="collab-card" data-tilt>
+          <span class="collab-tag">Pathway 01</span>
+          <h3>Clinical &amp; Academic Collaboration</h3>
+          <p>
+            Maxillofacial prosthodontics, anaplastology departments, academic medical centers, biomedical engineering labs,
+            and translational clinical researchers.
+          </p>
+          <a class="collab-link" href="mailto:james@iexpressionsllc.com?subject=Clinical%20%26%20Academic%20Collaboration%20Inquiry">
+            Discuss Research Collaboration <span aria-hidden="true">&rarr;</span>
+          </a>
+        </article>
 
-      <article class="collab-card">
-        <span class="collab-label">Engineering</span>
-        <h3>Technology &amp; manufacturing collaborators</h3>
-        <p>3D scanning, CAD, simulation, metrology, silicone materials, additive manufacturing, validation, and quality systems.</p>
-        <a href="mailto:james@iexpressionsllc.com?subject=Engineering%20Collaboration%20with%20Infinite%20Expressions">Discuss technical collaboration <span>→</span></a>
-      </article>
+        <!-- Pathway 02 -->
+        <article class="collab-card" data-tilt>
+          <span class="collab-tag">Pathway 02</span>
+          <h3>Technology &amp; Engineering Partnership</h3>
+          <p>
+            Industrial 3D scanning manufacturers, professional CAD/CAE software companies, metrology specialists,
+            and quality management system specialists.
+          </p>
+          <a class="collab-link" href="mailto:james@iexpressionsllc.com?subject=Technology%20%26%20Engineering%20Partnership%20Inquiry">
+            Explore Engineering Alliance <span aria-hidden="true">&rarr;</span>
+          </a>
+        </article>
 
-      <article class="collab-card">
-        <span class="collab-label">Infrastructure</span>
-        <h3>AI, hardware &amp; startup support</h3>
-        <p>GPU compute, model development, cloud credits, workstations, 3D-capture hardware, software access, mentorship, and non-dilutive funding.</p>
-        <a href="mailto:james@iexpressionsllc.com?subject=Technology%20Support%20for%20Infinite%20Expressions">Support the build <span>→</span></a>
-      </article>
-    </div>
+        <!-- Pathway 03 -->
+        <article class="collab-card" data-tilt>
+          <span class="collab-tag">Pathway 03</span>
+          <h3>Hardware, Software &amp; Compute Support</h3>
+          <p>
+            GPU workstation providers, secure local inference infrastructure, specialized 3D capture hardware, and silicone-capable
+            additive-manufacturing equipment.
+          </p>
+          <a class="collab-link" href="mailto:james@iexpressionsllc.com?subject=Compute%20%26%20Hardware%20Support%20Inquiry">
+            Support the Build <span aria-hidden="true">&rarr;</span>
+          </a>
+        </article>
 
-    <div class="wrap partner-note">
-      <strong>Technology-partner opportunity</strong>
-      <p>Organizations that support early development may have the opportunity to become preferred technology or reference-platform partners if their solutions successfully meet future technical, security, clinical, and performance requirements.</p>
+        <!-- Pathway 04 -->
+        <article class="collab-card" data-tilt>
+          <span class="collab-tag">Pathway 04</span>
+          <h3>Funding &amp; Accelerator Support</h3>
+          <p>
+            MedTech grant reviewers, translational research grants, federal SBIR/STTR initiatives, philanthropic or impact funders,
+            and healthcare accelerator programs.
+          </p>
+          <a class="collab-link" href="mailto:james@iexpressionsllc.com?subject=Funding%20%26%20Accelerator%20Support%20Inquiry">
+            Inquire on Funding <span aria-hidden="true">&rarr;</span>
+          </a>
+        </article>
+      </div>
+
+      <!-- Preferred Technology Partner Concept Box -->
+      <div class="tech-partner-card">
+        <div class="tech-partner-card-copy">
+          <strong>Preferred Technology Partner Framework</strong>
+          <p>
+            Organizations supporting early R&amp;D development may have the opportunity to become preferred technology
+            or reference-platform partners if their solutions successfully meet future technical, security, clinical,
+            and performance requirements. Participation does not constitute an exclusive arrangement or guarantee of commercial deployment.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="contact-section" id="contact">
+  <!-- CONTACT SECTION -->
+  <section class="contact-section" id="contact" aria-labelledby="contact-title">
     <div class="wrap contact-shell">
       <div class="contact-copy">
-        <div class="kicker light">Start a conversation</div>
-        <h2>Help move the next validation step forward.</h2>
-        <p>If you represent a university, clinical program, technology company, manufacturer, startup program, funder, or equipment provider, a focused introduction is the best place to start.</p>
+        <div class="kicker">Direct Dialogue</div>
+        <h2 id="contact-title">Connect with Infinite Expressions.</h2>
+        <p>
+          Whether you represent an academic medical center, advanced manufacturing laboratory, engineering software company,
+          or research grant committee, we welcome technically focused discussions on the future of digital facial prosthetics.
+        </p>
       </div>
 
       <div class="contact-card">
-        <div>
+        <div class="contact-recipient">
           <strong>James E. McCord Jr.</strong>
           <span>Founder · Patient Advocate · Technical Lead</span>
         </div>
-        <a class="email-link" href="mailto:james@iexpressionsllc.com?subject=Infinite%20Expressions%20Collaboration%20Inquiry">james@iexpressionsllc.com</a>
-        <div class="contact-meta">
+
+        <a class="email-address-link" href="mailto:james@iexpressionsllc.com?subject=Infinite%20Expressions%20Inquiry">
+          james@iexpressionsllc.com
+        </a>
+
+        <div class="contact-locations">
           <span>Lakewood, Colorado</span>
-          <span>Denver metro area</span>
+          <span>&bull;</span>
+          <span>Denver Metro Area (USA)</span>
         </div>
+
         <div class="contact-actions">
-          <a class="btn btn-light" href="mailto:james@iexpressionsllc.com?subject=Infinite%20Expressions%20Collaboration%20Inquiry">Contact Infinite Expressions</a>
-          <a class="btn btn-outline" href="https://github.com/InfiniteExpressionsLLC" target="_blank" rel="noopener noreferrer">View GitHub</a>
+          <a class="btn btn-primary" href="mailto:james@iexpressionsllc.com?subject=Infinite%20Expressions%20Collaboration%20Inquiry">
+            Send Formal Inquiry
+          </a>
+          <a class="btn btn-outline" href="https://github.com/InfiniteExpressionsLLC" target="_blank" rel="noopener noreferrer">
+            View GitHub Organization
+          </a>
         </div>
       </div>
     </div>
   </section>
 </main>
 
+<button class="back-to-top" type="button" aria-label="Back to top" title="Back to top">
+  <span aria-hidden="true">↑</span>
+</button>
+
+<!-- SITE FOOTER -->
 <footer class="site-footer">
   <div class="wrap footer-main">
     <div class="footer-brand">
-      <img src="/brand-mark.svg" width="42" height="42" alt="">
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkluZmluaXRlIEV4cHJlc3Npb25zIG1hcmsiPgogIDxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzFlNzNmZiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2E3YjBiOCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiByeD0iMjYiIGZpbGw9IiMwNzFiMzYiLz4KICA8cGF0aCBkPSJNMzMgNjRjMC0xNSA5LTI1IDIxLTI1IDE0IDAgMjIgMTYgMzEgMjkgNSA3IDkgMTIgMTQgMTIgNiAwIDEwLTYgMTAtMTZzLTQtMTYtMTAtMTZjLTUgMC05IDUtMTQgMTJsLTggMTJjLTkgMTMtMTYgMTctMjMgMTctMTIgMC0yMS0xMC0yMS0yNXptMTIgMGMwIDEwIDQgMTUgMTAgMTUgNSAwIDktNSAxNC0xMmw4LTEyYzgtMTIgMTUtMTggMjMtMTggMTMgMCAyMiAxMSAyMiAyN3MtOSAyNy0yMiAyN2MtMTIgMC0yMC0xMS0yOC0yMy03LTEwLTEyLTE5LTE4LTE5LTYgMC0xMCA2LTEwIDE1eiIgZmlsbD0idXJsKCNnKSIvPgo8L3N2Zz4K" width="40" height="40" alt="Infinite Expressions Logo">
       <div>
         <strong>Infinite Expressions LLC</strong>
-        <span>Restoring Identity. Empowering Lives.</span>
+        <span>Reengineering the path to custom facial prosthetics</span>
       </div>
     </div>
 
-    <nav class="footer-links" aria-label="Footer navigation">
+    <nav class="footer-links" aria-label="Footer Quick Navigation">
       <a href="#technology">Technology</a>
-      <a href="#ieai">IEAI</a>
+      <a href="#ieai">IEAI System</a>
       <a href="#progress">R&amp;D Status</a>
-      <a href="#founder">Founder</a>
-      <a href="#collaborate">Collaborate</a>
+      <a href="#founder">Founder Story</a>
+      <a href="#collaborate">Partnerships</a>
       <a href="mailto:james@iexpressionsllc.com">Contact</a>
     </nav>
   </div>
 
-  <div class="wrap footer-note">
-    <span>© <span data-year></span> Infinite Expressions LLC. All rights reserved.</span>
-    <p>Infinite Expressions is an early-stage R&amp;D company. Website content describes research objectives and development activities and should not be interpreted as clinical availability, medical advice, FDA clearance, or demonstrated clinical performance. References to third-party programs indicate confirmed participation or resource access only and do not imply endorsement, sponsorship, clinical validation, or partnership unless expressly stated.</p>
+  <div class="wrap footer-disclaimers">
+    <div class="footer-copyright">
+      &copy; <span data-year>2026</span> Infinite Expressions LLC. All rights reserved.
+    </div>
+    <p class="footer-legal-text">
+      <strong>Research-Stage Notice:</strong> Infinite Expressions LLC is an early-stage research and development company.
+      Website content describes engineering objectives and exploratory research activities. Nothing on this website should be
+      interpreted as an offer of clinical prosthetics, medical advice, diagnosis, treatment, FDA clearance, or demonstrated
+      clinical efficacy. References to third-party programs (including NVIDIA Inception and AWS Activate) signify confirmed
+      program participation or resource access only and do not imply endorsement, sponsorship, clinical validation, or formal
+      partnership unless expressly stated.
+    </p>
   </div>
 </footer>
 
-<script src="script.js" defer></script>
+<!-- Deferred Execution Script -->
+<script>/**
+ * Infinite Expressions LLC — interactive engineering website
+ * Lightweight, dependency-free interactions with accessibility and reduced-motion safeguards.
+ */
+
+document.addEventListener('DOMContentLoaded', () => {
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+  // Accessible mobile navigation
+  const menuBtn = document.querySelector('.menu-btn');
+  const navLinks = document.querySelector('.nav-links');
+  const siteHeader = document.querySelector('.site-header');
+
+  if (menuBtn && navLinks) {
+    const closeMenu = () => {
+      navLinks.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      menuBtn.setAttribute('aria-label', 'Open navigation menu');
+    };
+
+    menuBtn.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', String(isOpen));
+      menuBtn.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && navLinks.classList.contains('open')) {
+        closeMenu();
+        menuBtn.focus();
+      }
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 900 && navLinks.classList.contains('open')) closeMenu();
+    });
+  }
+
+  // Header state + reading progress
+  const progressBar = document.querySelector('.page-progress span');
+  const updateScrollUI = () => {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const maxScroll = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+    if (siteHeader) siteHeader.classList.toggle('scrolled', scrollTop > 20);
+    if (progressBar) progressBar.style.transform = `scaleX(${Math.min(1, scrollTop / maxScroll)})`;
+  };
+  updateScrollUI();
+  window.addEventListener('scroll', updateScrollUI, { passive: true });
+
+  // Dynamic copyright year
+  document.querySelectorAll('[data-year]').forEach(el => {
+    el.textContent = new Date().getFullYear();
+  });
+
+  // Interactive five-stage technology workflow
+  const stagesData = [
+    {
+      kicker: 'Stage 01 · Non-Contact Acquisition',
+      title: 'High-Resolution 3D Capture',
+      subtitle: 'Non-contact optical surface acquisition',
+      description: 'Facial surface geometry can be digitized without physical impressions. The resulting digital surface data can establish a baseline reference for subsequent engineering reconstruction and review.',
+      specs: [
+        { label: 'Primary Input', value: 'Non-contact optical / 3D surface scans' },
+        { label: 'Key Objective', value: 'Capture surface geometry without impression-induced deformation' },
+        { label: 'Supervision', value: 'Qualified acquisition review & landmark verification' },
+        { label: 'Status Classification', value: 'In Development · authorized maxillofacial data acquired' }
+      ],
+      icon: '◎',
+      status: 'In Development',
+      statusClass: 'in-development',
+      schematic: 'Point-cloud acquisition, surface triangulation, and baseline mesh generation.'
+    },
+    {
+      kicker: 'Stage 02 · Assistive Geometry Intelligence',
+      title: 'IEAI Preparation & Geometry Review',
+      subtitle: 'Local-first geometry checks, scan-quality review, and landmark assistance',
+      description: 'IEAI is being developed to assist with deterministic geometry checks, scan-quality assessment, normal alignment, and landmark-analysis support. The architecture prioritizes local processing, human supervision, and traceable provenance rather than autonomous clinical decision-making.',
+      specs: [
+        { label: 'Primary Input', value: 'Versioned surface meshes and authorized scan data' },
+        { label: 'Key Objective', value: 'Assisted mesh checks, defect flagging & landmark guides' },
+        { label: 'Governance', value: 'Local-first compute with structured audit / provenance controls' },
+        { label: 'Status Classification', value: 'In Development · deterministic rules & test harnesses' }
+      ],
+      icon: '⌁',
+      status: 'In Development',
+      statusClass: 'in-development',
+      schematic: 'Geometry checks, scan-quality review, landmark assistance, and provenance records.'
+    },
+    {
+      kicker: 'Stage 03 · Professional Engineering',
+      title: 'CAD / Engineering Modeling',
+      subtitle: 'Controlled handoff into professional CAD environments',
+      description: 'Versioned geometric contours are prepared for import into professional engineering suites. Qualified designers can define margins, retention concepts, weight-reduction geometry, and patient-specific boundaries while preserving review history.',
+      specs: [
+        { label: 'Primary Input', value: 'Versioned surface model from the controlled engineering pipeline' },
+        { label: 'Key Objective', value: 'Patient-specific prosthetic geometry and controlled design iteration' },
+        { label: 'Software Stack', value: 'Professional CAD handoff architecture' },
+        { label: 'Status Classification', value: 'In Development · handoff protocols & pipeline testing' }
+      ],
+      icon: '◇',
+      status: 'In Development',
+      statusClass: 'in-development',
+      schematic: 'Boundary definition, retention concepts, wall-thickness tuning, and versioned review.'
+    },
+    {
+      kicker: 'Stage 04 · Human-in-the-Loop Review',
+      title: 'Dimensional Validation & Simulation',
+      subtitle: 'Defined inspection criteria, simulation where appropriate, and qualified review',
+      description: 'The planned validation stage combines dimensional inspection, digital clearance checks against reference anatomy, simulation where appropriate, and qualified human review. The workflow is being designed so revisions can produce traceable validation records before downstream use.',
+      specs: [
+        { label: 'Primary Input', value: 'Reviewed CAD geometry and reference anatomy' },
+        { label: 'Key Objective', value: 'Defined dimensional checks and documented acceptance criteria' },
+        { label: 'Oversight', value: 'Human review gates before downstream progression' },
+        { label: 'Status Classification', value: 'In Development · inspection methodology & metrology planning' }
+      ],
+      icon: '✓',
+      status: 'In Development',
+      statusClass: 'in-development',
+      schematic: 'Dimensional inspection, interface-review concepts, and traceable validation records.'
+    },
+    {
+      kicker: 'Stage 05 · Manufacturing Research',
+      title: 'Silicone Additive Manufacturing',
+      subtitle: 'Moldless direct-elastomer manufacturing research',
+      description: 'Infinite Expressions is evaluating silicone-capable additive manufacturing approaches that could eventually produce patient-specific prosthetic geometry directly from controlled digital toolpaths, reducing dependence on multi-part analog molds.',
+      specs: [
+        { label: 'Primary Input', value: 'Sliced toolpaths derived from reviewed CAD geometry' },
+        { label: 'Key Objective', value: 'Evaluate direct printing in suitable silicone / elastomer systems' },
+        { label: 'Research Focus', value: 'Material properties, layer bonding, process control & biocompatibility requirements' },
+        { label: 'Status Classification', value: 'Research Direction / Evaluation Stage' }
+      ],
+      icon: '⬡',
+      status: 'Research Direction',
+      statusClass: 'research',
+      schematic: 'Elastomer process evaluation, layer bonding, cure-cycle and process-control research.'
+    }
+  ];
+
+  const tabButtons = [...document.querySelectorAll('.workflow-tab-btn')];
+  const detailPanel = document.querySelector('.workflow-detail-display');
+
+  const updateWorkflowView = stageIndex => {
+    const data = stagesData[stageIndex];
+    if (!data || !detailPanel) return;
+
+    if (typeof setStageProgress === 'function') setStageProgress(stageIndex);
+
+    tabButtons.forEach((btn, index) => {
+      const active = index === stageIndex;
+      btn.classList.toggle('active', active);
+      btn.setAttribute('aria-selected', String(active));
+      btn.setAttribute('tabindex', active ? '0' : '-1');
+    });
+
+    const render = () => {
+      const kicker = detailPanel.querySelector('.detail-stage-kicker');
+      const title = detailPanel.querySelector('.detail-header h3');
+      const subtitle = detailPanel.querySelector('.detail-subtitle');
+      const description = detailPanel.querySelector('.detail-body p');
+      const specs = detailPanel.querySelector('.detail-specs-grid');
+      const icon = detailPanel.querySelector('.schematic-icon');
+      const status = detailPanel.querySelector('.schematic-status-pill');
+      const schematic = detailPanel.querySelector('.schematic-visual p');
+
+      if (kicker) kicker.textContent = data.kicker;
+      if (title) title.textContent = data.title;
+      if (subtitle) subtitle.textContent = data.subtitle;
+      if (description) description.textContent = data.description;
+      if (specs) {
+        specs.innerHTML = data.specs.map(spec => `
+          <div class="detail-spec-box">
+            <span>${spec.label}</span>
+            <strong>${spec.value}</strong>
+          </div>
+        `).join('');
+      }
+      if (icon) icon.textContent = data.icon;
+      if (status) {
+        status.textContent = data.status;
+        status.className = `schematic-status-pill ${data.statusClass}`;
+      }
+      if (schematic) schematic.textContent = data.schematic;
+      detailPanel.setAttribute('aria-labelledby', tabButtons[stageIndex]?.id || 'tab-capture');
+    };
+
+    if (prefersReducedMotion) {
+      render();
+    } else {
+      detailPanel.classList.add('is-switching');
+      window.setTimeout(() => {
+        render();
+        detailPanel.classList.remove('is-switching');
+      }, 140);
+    }
+  };
+
+  tabButtons.forEach((button, index) => {
+    button.addEventListener('click', () => updateWorkflowView(index));
+    button.addEventListener('keydown', event => {
+      let next = index;
+      if (event.key === 'ArrowRight' || event.key === 'ArrowDown') next = (index + 1) % tabButtons.length;
+      else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') next = (index - 1 + tabButtons.length) % tabButtons.length;
+      else if (event.key === 'Home') next = 0;
+      else if (event.key === 'End') next = tabButtons.length - 1;
+      else return;
+      event.preventDefault();
+      tabButtons[next].focus();
+      updateWorkflowView(next);
+    });
+  });
+
+  // IEAI capability explorer
+  const moduleData = {
+    geometry: {
+      title: 'Geometry Analysis',
+      status: 'In Development',
+      statusClass: 'dev',
+      summary: 'Rule-based analysis is being built to inspect mesh integrity, surface orientation, topology, and geometry conditions before downstream engineering work.',
+      proof: 'Evidence boundary: deterministic structural checks and test harnesses are under development; this is not a clinically validated diagnostic function.'
+    },
+    'scan-quality': {
+      title: 'Scan Quality Review',
+      status: 'In Development',
+      statusClass: 'dev',
+      summary: 'The R&D direction is to assist with identifying incomplete capture, motion artifacts, occluded regions, and surface noise before CAD handoff.',
+      proof: 'Evidence boundary: quality-review logic is being developed and tested on controlled data; qualified acquisition review remains required.'
+    },
+    landmarks: {
+      title: 'Landmark & Dimensional Assistance',
+      status: 'In Development',
+      statusClass: 'dev',
+      summary: 'IEAI research includes assistive anatomical reference-point analysis intended to support repeatable engineering review without replacing specialist judgment.',
+      proof: 'Evidence boundary: landmark assistance remains an engineering R&D capability and requires qualified human verification.'
+    },
+    fit: {
+      title: 'Fit Analysis Research',
+      status: 'Research Direction',
+      statusClass: 'research',
+      summary: 'Future work may evaluate prosthetic margin seating and interface clearance against reference anatomy to help identify potential fit issues before fabrication.',
+      proof: 'Evidence boundary: concept-stage research; no clinical fit-performance claim is made.'
+    },
+    motion: {
+      title: 'Motion Analysis Research',
+      status: 'Research Direction',
+      statusClass: 'research',
+      summary: 'A longer-term research direction is to evaluate how surrounding facial movement could affect prosthetic interface behavior using dynamic capture or simulation.',
+      proof: 'Evidence boundary: exploratory research direction; no current clinical motion-modeling capability is claimed.'
+    },
+    manufacturing: {
+      title: 'Manufacturing Readiness',
+      status: 'In Development',
+      statusClass: 'dev',
+      summary: 'Rule-based checks are being developed for wall thickness, geometry conditions, and manufacturing constraints relevant to direct silicone additive-manufacturing research.',
+      proof: 'Evidence boundary: manufacturing-readiness logic and printer/material integration require additional validation.'
+    },
+    provenance: {
+      title: 'Provenance & Audit Trail',
+      status: 'In Development',
+      statusClass: 'dev',
+      summary: 'The architecture is being designed to record source geometry, automated operations, version changes, review decisions, and downstream handoffs.',
+      proof: 'Evidence boundary: traceability controls are being built and tested; the website does not claim a completed regulated QMS.'
+    },
+    local: {
+      title: 'Local Processing Foundation',
+      status: 'Verified Foundation',
+      statusClass: 'verified',
+      summary: 'Local AI development infrastructure and model execution are operational, supporting a local-first architecture for future patient-sensitive workflows.',
+      proof: 'Evidence boundary: local processing alone does not establish HIPAA compliance, clinical security validation, or authorization to process patient data.'
+    }
+  };
+
+  const moduleCards = [...document.querySelectorAll('.module-card[data-module]')];
+  const moduleExplorer = document.querySelector('#module-explorer');
+
+  const showModule = card => {
+    const data = moduleData[card?.dataset.module];
+    if (!data || !moduleExplorer) return;
+    moduleCards.forEach(item => {
+      const active = item === card;
+      item.classList.toggle('active', active);
+      item.setAttribute('aria-expanded', String(active));
+    });
+    moduleExplorer.querySelector('[data-module-title]').textContent = data.title;
+    moduleExplorer.querySelector('[data-module-summary]').textContent = data.summary;
+    const status = moduleExplorer.querySelector('[data-module-status]');
+    status.textContent = data.status;
+    status.className = `module-status-badge ${data.statusClass}`;
+    moduleExplorer.querySelector('[data-module-proof]').textContent = data.proof;
+    moduleExplorer.classList.add('is-active');
+  };
+
+  moduleCards.forEach(card => {
+    card.addEventListener('click', () => showModule(card));
+    card.addEventListener('keydown', event => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        showModule(card);
+      }
+    });
+  });
+  if (moduleCards[0]) showModule(moduleCards[0]);
+
+  // Roadmap status highlighter
+  const statusButtons = [...document.querySelectorAll('.status-filter-btn')];
+  const roadmapCards = [...document.querySelectorAll('.progress-column')];
+  statusButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.dataset.statusFilter;
+      statusButtons.forEach(item => {
+        const active = item === button;
+        item.classList.toggle('active', active);
+        item.setAttribute('aria-pressed', String(active));
+      });
+      roadmapCards.forEach(card => {
+        const matches = filter === 'all' || card.classList.contains(filter);
+        card.classList.toggle('status-dimmed', !matches);
+        card.classList.toggle('status-highlighted', matches && filter !== 'all');
+      });
+    });
+  });
+
+  // Scroll-triggered reveals
+  const revealTargets = [
+    ...document.querySelectorAll(
+      '.credential-item, .opportunity-comparison, .pillar-card, .workflow-nav-bar, .workflow-detail-display, .module-card, .module-explorer, .progress-column, .facts-card, .founder-visual-panel, .founder-copy, .collab-card, .tech-partner-card, .contact-copy, .contact-card'
+    )
+  ];
+
+  revealTargets.forEach((element, index) => {
+    element.classList.add('reveal-ready');
+    element.style.setProperty('--reveal-delay', `${Math.min(index % 4, 3) * 65}ms`);
+  });
+
+  if (prefersReducedMotion || !('IntersectionObserver' in window)) {
+    revealTargets.forEach(element => element.classList.add('is-visible'));
+  } else {
+    const revealObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+    revealTargets.forEach(element => revealObserver.observe(element));
+  }
+
+  // Scrollspy navigation
+  const sectionLinks = [...document.querySelectorAll('.nav-links a[href^="#"]')];
+  const sections = sectionLinks
+    .map(link => document.querySelector(link.getAttribute('href')))
+    .filter(Boolean);
+
+  if ('IntersectionObserver' in window && sections.length) {
+    const navObserver = new IntersectionObserver(entries => {
+      const visible = entries
+        .filter(entry => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!visible) return;
+      sectionLinks.forEach(link => {
+        const active = link.getAttribute('href') === `#${visible.target.id}`;
+        link.classList.toggle('is-current', active);
+        if (active) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+      });
+    }, { rootMargin: '-28% 0px -60% 0px', threshold: [0.05, 0.2, 0.45] });
+    sections.forEach(section => navObserver.observe(section));
+  }
+
+  // Subtle pointer-responsive depth for hero and partnership cards.
+  // Disabled for touch devices and reduced-motion users.
+  if (finePointer && !prefersReducedMotion) {
+    document.querySelectorAll('[data-tilt]').forEach(card => {
+      const maxTilt = card.classList.contains('hero-visual-card') ? 3.2 : 2.0;
+
+      const reset = () => {
+        card.style.setProperty('--tilt-x', '0deg');
+        card.style.setProperty('--tilt-y', '0deg');
+        card.style.setProperty('--spot-x', '50%');
+        card.style.setProperty('--spot-y', '50%');
+      };
+
+      card.addEventListener('pointermove', event => {
+        const rect = card.getBoundingClientRect();
+        const x = Math.min(1, Math.max(0, (event.clientX - rect.left) / rect.width));
+        const y = Math.min(1, Math.max(0, (event.clientY - rect.top) / rect.height));
+        card.style.setProperty('--tilt-x', `${(0.5 - y) * maxTilt * 2}deg`);
+        card.style.setProperty('--tilt-y', `${(x - 0.5) * maxTilt * 2}deg`);
+        card.style.setProperty('--spot-x', `${x * 100}%`);
+        card.style.setProperty('--spot-y', `${y * 100}%`);
+      });
+      card.addEventListener('pointerleave', reset);
+      card.addEventListener('blur', reset, true);
+      reset();
+    });
+  }
+
+  // Premium header treatment and back-to-top control
+  const premiumHeader = document.querySelector('#site-header');
+  const backToTop = document.querySelector('.back-to-top');
+  const syncScrollChrome = () => {
+    const scrolled = window.scrollY > 24;
+    premiumHeader?.classList.toggle('is-scrolled', scrolled);
+    backToTop?.classList.toggle('is-visible', window.scrollY > 720);
+  };
+  syncScrollChrome();
+  window.addEventListener('scroll', syncScrollChrome, { passive: true });
+  backToTop?.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+  });
+
+  // Show stage progression as users explore the engineering thread.
+  const workflowNav = document.querySelector('.workflow-nav-bar');
+  const setStageProgress = index => {
+    if (!workflowNav || !tabButtons.length) return;
+    const pct = tabButtons.length === 1 ? 100 : (index / (tabButtons.length - 1)) * 100;
+    workflowNav.style.setProperty('--stage-progress', `${pct}%`);
+  };
+  setStageProgress(0);
+  tabButtons.forEach((button, index) => {
+    button.addEventListener('click', () => setStageProgress(index));
+    button.addEventListener('keydown', event => {
+      if (['Enter',' '].includes(event.key)) setStageProgress(index);
+    });
+  });
+
+  // Decorative, explicitly simulated hero telemetry.
+  const hudCoord = document.querySelector('[data-hud="coord"]');
+  if (!prefersReducedMotion && hudCoord) {
+    const labels = [
+      'Mesh reference · illustrative',
+      'Surface pass · simulated',
+      'Boundary trace · simulated',
+      'Review layer · illustrative'
+    ];
+    let current = 0;
+    window.setInterval(() => {
+      current = (current + 1) % labels.length;
+      hudCoord.textContent = labels[current];
+    }, 3200);
+  }
+});
+</script>
 </body>
 </html>
