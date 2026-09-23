@@ -2718,6 +2718,53 @@ summary:focus-visible {
   .hero::before,.hero::after,.hero-visual-card,.mesh-svg,.mesh-svg g[fill="#70b5ff"] circle,.metrology-callout{animation:none!important}
   #hero-motion-canvas,.cursor-glow{display:none!important}
 }
+
+/* Full horizontal Infinite Expressions brand lockup */
+.brand-full {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+.brand img.brand-logo-horizontal {
+  width: clamp(320px, 31vw, 430px);
+  height: auto;
+  max-width: 100%;
+  border-radius: 0;
+  box-shadow: none;
+  object-fit: contain;
+}
+.nav {
+  min-height: 96px;
+}
+@media (max-width: 1120px) and (min-width: 901px) {
+  .brand img.brand-logo-horizontal {
+    width: 275px;
+  }
+  .nav-links {
+    gap: 20px;
+  }
+  .nav-links a {
+    font-size: 0.86rem;
+  }
+}
+@media (max-width: 900px) {
+  .nav {
+    min-height: 86px;
+  }
+  .brand img.brand-logo-horizontal {
+    width: min(320px, calc(100vw - 112px));
+  }
+  .nav-links {
+    top: 86px;
+  }
+}
+@media (max-width: 480px) {
+  .brand img.brand-logo-horizontal {
+    width: min(250px, calc(100vw - 104px));
+  }
+}
+
 </style>
 
   <!-- Schema.org JSON-LD Structured Data -->
@@ -2764,12 +2811,8 @@ summary:focus-visible {
 <!-- Site Navigation Header -->
 <header class="site-header" id="site-header">
   <div class="wrap nav">
-    <a class="brand" href="#top" aria-label="Infinite Expressions Home">
-      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkluZmluaXRlIEV4cHJlc3Npb25zIG1hcmsiPgogIDxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzFlNzNmZiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2E3YjBiOCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiByeD0iMjYiIGZpbGw9IiMwNzFiMzYiLz4KICA8cGF0aCBkPSJNMzMgNjRjMC0xNSA5LTI1IDIxLTI1IDE0IDAgMjIgMTYgMzEgMjkgNSA3IDkgMTIgMTQgMTIgNiAwIDEwLTYgMTAtMTZzLTQtMTYtMTAtMTZjLTUgMC05IDUtMTQgMTJsLTggMTJjLTkgMTMtMTYgMTctMjMgMTctMTIgMC0yMS0xMC0yMS0yNXptMTIgMGMwIDEwIDQgMTUgMTAgMTUgNSAwIDktNSAxNC0xMmw4LTEyYzgtMTIgMTUtMTggMjMtMTggMTMgMCAyMiAxMSAyMiAyN3MtOSAyNy0yMiAyN2MtMTIgMC0yMC0xMS0yOC0yMy03LTEwLTEyLTE5LTE4LTE5LTYgMC0xMCA2LTEwIDE1eiIgZmlsbD0idXJsKCNnKSIvPgo8L3N2Zz4K" width="44" height="44" alt="Infinite Expressions Brand Mark">
-      <span class="brand-copy">
-        <strong>Infinite Expressions</strong>
-        <small>Digital Facial Prosthetics R&amp;D</small>
-      </span>
+    <a class="brand brand-full" href="#top" aria-label="Infinite Expressions Home">
+      <img class="brand-logo-horizontal" src="/brand-logo-horizontal.svg" alt="Infinite Expressions — Rebuilding Confidence">
     </a>
 
     <button class="menu-btn" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-navigation">
