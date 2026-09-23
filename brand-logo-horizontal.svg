@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 240" role="img" aria-labelledby="title desc">
+  <title id="title">Infinite Expressions — Rebuilding Confidence</title>
+  <desc id="desc">Metallic silver and blue Infinite Expressions horizontal logo with IE infinity monogram and Rebuilding Confidence tagline.</desc>
+  <defs>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4f7fa"/>
+      <stop offset=".16" stop-color="#8fa3b7"/>
+      <stop offset=".34" stop-color="#dce5ed"/>
+      <stop offset=".52" stop-color="#6f89a5"/>
+      <stop offset=".72" stop-color="#edf2f6"/>
+      <stop offset="1" stop-color="#8ca0b6"/>
+    </linearGradient>
+    <linearGradient id="blueMetal" x1="0" y1=".15" x2="1" y2=".85">
+      <stop offset="0" stop-color="#dbe9f8"/>
+      <stop offset=".22" stop-color="#7ea7d2"/>
+      <stop offset=".48" stop-color="#eef5fb"/>
+      <stop offset=".68" stop-color="#5d83ad"/>
+      <stop offset="1" stop-color="#c8d8e7"/>
+    </linearGradient>
+    <linearGradient id="wordMetal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eaf0f6"/>
+      <stop offset=".45" stop-color="#a9bacb"/>
+      <stop offset=".72" stop-color="#f4f7fa"/>
+      <stop offset="1" stop-color="#8b9cad"/>
+    </linearGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- IE / infinity monogram -->
+  <g transform="translate(12,8)">
+    <path d="M62 36h36v168H62z" fill="url(#metal)" opacity=".92"/>
+    <path d="M46 36h68M46 204h68" stroke="url(#metal)" stroke-width="9" stroke-linecap="round"/>
+    <path d="M92 120
+             C125 70 168 64 210 101
+             C228 117 245 138 264 153
+             C289 173 324 171 349 145
+             C373 121 373 91 350 70
+             C326 48 293 49 267 70
+             C246 87 229 108 211 126
+             C169 168 126 170 92 120Z"
+          fill="none" stroke="url(#blueMetal)" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M96 119
+             C126 77 165 74 204 107
+             C222 122 238 142 258 158
+             C286 181 326 178 355 148"
+          fill="none" stroke="#ffffff" stroke-opacity=".28" stroke-width="4" stroke-linecap="round"/>
+    <g fill="url(#metal)" stroke="#e8eef4" stroke-opacity=".28" stroke-width="1">
+      <path d="M288 69h73v15h-54v25h47v14h-47v31h56v15h-75z"/>
+    </g>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(398,48)">
+    <text x="0" y="78"
+          font-family="Segoe UI, Helvetica Neue, Arial, sans-serif"
+          font-size="66" font-weight="300" letter-spacing="4.2"
+          fill="url(#wordMetal)">INFINITE EXPRESSIONS</text>
+    <text x="196" y="142"
+          font-family="Segoe UI, Helvetica Neue, Arial, sans-serif"
+          font-size="31" font-weight="400" letter-spacing="4.8"
+          fill="#63b7e6" filter="url(#softGlow)">REBUILDING CONFIDENCE</text>
+  </g>
+</svg>
