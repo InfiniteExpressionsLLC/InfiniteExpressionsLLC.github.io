@@ -2765,6 +2765,58 @@ summary:focus-visible {
   }
 }
 
+
+/* ========================================================================
+   PRIMARY BRAND EMBLEM — September 2026
+   ======================================================================== */
+.site-header .nav {
+  min-height: 122px;
+}
+.brand-full {
+  flex: 0 0 auto;
+}
+.brand img.brand-logo-emblem {
+  width: 112px;
+  height: 112px;
+  max-width: none;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 1px rgba(184, 213, 241, 0.18),
+    0 0 26px rgba(43, 127, 255, 0.28),
+    0 10px 30px rgba(0, 0, 0, 0.34);
+  transition: transform .25s ease, filter .25s ease, box-shadow .25s ease;
+}
+.brand img.brand-logo-emblem:hover {
+  transform: scale(1.035);
+  filter: brightness(1.05);
+  box-shadow:
+    0 0 0 1px rgba(184, 213, 241, 0.25),
+    0 0 34px rgba(43, 127, 255, 0.36),
+    0 12px 34px rgba(0, 0, 0, 0.38);
+}
+@media (max-width: 1120px) {
+  .site-header .nav { min-height: 108px; }
+  .brand img.brand-logo-emblem {
+    width: 96px;
+    height: 96px;
+  }
+}
+@media (max-width: 900px) {
+  .site-header .nav { min-height: 94px; }
+  .brand img.brand-logo-emblem {
+    width: 82px;
+    height: 82px;
+  }
+}
+@media (max-width: 480px) {
+  .site-header .nav { min-height: 84px; }
+  .brand img.brand-logo-emblem {
+    width: 72px;
+    height: 72px;
+  }
+}
+
 </style>
 
   <!-- Schema.org JSON-LD Structured Data -->
@@ -2777,7 +2829,7 @@ summary:focus-visible {
         "@id":"https://iexpressionsllc.com/#organization",
         "name":"Infinite Expressions LLC",
         "url":"https://iexpressionsllc.com/",
-        "logo":"https://iexpressionsllc.com/brand-logo-horizontal.svg",
+        "logo":"https://iexpressionsllc.com/infinite-expressions-emblem.webp",
         "email":"james@iexpressionsllc.com",
         "description":"Founder-led medical-technology research and development focused on human-supervised AI-assisted digital facial-prosthetic workflows.",
         "founder":{
@@ -2812,7 +2864,7 @@ summary:focus-visible {
 <header class="site-header" id="site-header">
   <div class="wrap nav">
     <a class="brand brand-full" href="#top" aria-label="Infinite Expressions Home">
-      <img class="brand-logo-horizontal" src="/brand-logo-horizontal.svg" alt="Infinite Expressions — Rebuilding Confidence">
+      <img class="brand-logo-emblem" src="/infinite-expressions-emblem.webp" alt="Infinite Expressions LLC — Advancing Facial Reconstruction Through Innovation" width="400" height="400">
     </a>
 
     <button class="menu-btn" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-navigation">
