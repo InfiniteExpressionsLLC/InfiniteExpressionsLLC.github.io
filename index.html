@@ -2817,6 +2817,212 @@ summary:focus-visible {
   }
 }
 
+/* ==========================================================================
+   IEAI PUBLIC PRODUCT DEMONSTRATOR
+   A real client-side, non-clinical demonstration of controlled geometry QA
+   behavior. No files are uploaded and no patient data is processed.
+   ========================================================================== */
+.product-demo-section {
+  padding: 104px 0;
+  background: linear-gradient(180deg, var(--bg-canvas), var(--bg-deep));
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+.product-demo-shell {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 28px;
+  align-items: stretch;
+}
+.product-demo-context,
+.product-demo-app {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+}
+.product-demo-context {
+  padding: 32px;
+}
+.product-demo-context h3,
+.product-demo-app h3 {
+  color: var(--text-bright);
+  font-size: 1.35rem;
+  margin-bottom: 12px;
+}
+.product-demo-context p {
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+.product-proof-list {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+  margin: 20px 0 0;
+}
+.product-proof-list li {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 12px;
+  padding: 12px 0;
+  border-top: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  font-size: .9rem;
+}
+.product-proof-list strong {
+  color: var(--accent-silver);
+  font-family: var(--font-mono);
+  font-size: .74rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+.product-demo-app {
+  overflow: hidden;
+}
+.demo-app-bar {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border-subtle);
+  background: rgba(255,255,255,.025);
+  font-family: var(--font-mono);
+  font-size: .72rem;
+  color: var(--text-muted);
+}
+.demo-live-badge {
+  color: var(--status-verified);
+  border: 1px solid var(--status-verified-border);
+  background: var(--status-verified-bg);
+  border-radius: var(--radius-full);
+  padding: 4px 9px;
+  font-weight: 800;
+}
+.demo-app-body {
+  padding: 28px;
+}
+.demo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 14px;
+  margin: 20px 0;
+}
+.demo-field label {
+  display: block;
+  color: var(--text-muted);
+  font-size: .78rem;
+  margin-bottom: 6px;
+}
+.demo-field input,
+.demo-field select {
+  width: 100%;
+  padding: 12px 13px;
+  color: var(--text-bright);
+  background: var(--bg-deep);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
+  font: 600 .9rem var(--font-mono);
+}
+.demo-field input:focus,
+.demo-field select:focus {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 2px;
+}
+.demo-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.demo-result {
+  min-height: 156px;
+  padding: 18px;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  background: rgba(5,13,26,.68);
+}
+.demo-result-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.demo-result h4 {
+  color: var(--text-bright);
+  font-size: 1rem;
+}
+.demo-result-status {
+  font: 800 .7rem var(--font-mono);
+  text-transform: uppercase;
+  border-radius: var(--radius-full);
+  padding: 5px 9px;
+}
+.demo-result-status.ready {
+  color: var(--text-muted);
+  border: 1px solid var(--border-medium);
+}
+.demo-result-status.pass {
+  color: var(--status-verified);
+  border: 1px solid var(--status-verified-border);
+  background: var(--status-verified-bg);
+}
+.demo-result-status.review {
+  color: #fbbf24;
+  border: 1px solid rgba(245,158,11,.35);
+  background: rgba(245,158,11,.1);
+}
+.demo-output {
+  color: var(--text-muted);
+  font-size: .88rem;
+  line-height: 1.62;
+}
+.demo-audit {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-subtle);
+  font: .7rem/1.55 var(--font-mono);
+  color: var(--text-dim);
+  word-break: break-word;
+}
+.demo-disclaimer {
+  margin-top: 14px;
+  color: var(--text-dim);
+  font-size: .76rem;
+  line-height: 1.55;
+}
+.team-verification-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+.team-verification-links a {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 13px;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-full);
+  color: var(--accent-silver);
+  font-size: .82rem;
+  font-weight: 700;
+  transition: .2s ease;
+}
+.team-verification-links a:hover {
+  color: #fff;
+  border-color: var(--accent-blue-hover);
+  background: rgba(43,127,255,.08);
+}
+@media (max-width: 900px) {
+  .product-demo-shell { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .demo-grid { grid-template-columns: 1fr; }
+  .product-proof-list li { grid-template-columns: 1fr; gap: 4px; }
+}
+
 </style>
 
   <!-- Schema.org JSON-LD Structured Data -->
@@ -2832,10 +3038,15 @@ summary:focus-visible {
         "logo":"https://iexpressionsllc.com/infinite-expressions-emblem-v2.webp",
         "email":"james@iexpressionsllc.com",
         "description":"Founder-led medical-technology research and development focused on human-supervised AI-assisted digital facial-prosthetic workflows.",
+        "foundingDate":"2025-04-08",
         "founder":{
           "@type":"Person",
           "name":"James E. McCord Jr.",
-          "jobTitle":"Founder · Patient Advocate · Technical Lead"
+          "jobTitle":"Founder · Patient Advocate · Technical Lead",
+          "sameAs":[
+          "https://github.com/InfiniteExpressionsLLC",
+          "https://www.sos.state.co.us/biz/BusinessEntityDetail.do?fileId=20251154298"
+        ]
         },
         "address":{
           "@type":"PostalAddress",
@@ -2874,6 +3085,7 @@ summary:focus-visible {
     <nav class="nav-links" id="main-navigation" aria-label="Main Navigation">
       <a href="#technology">Technology</a>
       <a href="#ieai">IEAI System</a>
+      <a href="#product-demo">Product Demo</a>
       <a href="#progress">R&amp;D Progress</a>
       <a href="#founder">Founder Story</a>
       <a href="#collaborate">Partnerships</a>
@@ -3442,6 +3654,102 @@ summary:focus-visible {
     </div>
   </section>
 
+
+  <!-- IEAI PUBLIC PRODUCT DEMONSTRATOR -->
+  <section class="product-demo-section" id="product-demo" aria-labelledby="product-demo-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Public Product Demonstrator</div>
+        <h2 id="product-demo-title">See the software behavior, not just the concept.</h2>
+        <p>
+          IEAI is a software product under active development. This public demonstrator exposes a small, non-clinical
+          slice of the product philosophy: deterministic geometry-quality checks, human review gates, and an auditable
+          decision record. It runs entirely in your browser and does not upload files or process patient data.
+        </p>
+      </div>
+
+      <div class="product-demo-shell">
+        <article class="product-demo-context">
+          <span class="module-status-badge dev">Research Software · Active Development</span>
+          <h3>IEAI engineering platform</h3>
+          <p>
+            The private IEAI codebase combines local AI models, deterministic geometry logic, versioned source models,
+            validation controls, and governed handoffs into professional CAD and lifecycle-management environments.
+          </p>
+          <p>
+            The public demonstration intentionally reveals only simple review logic. Proprietary model behavior,
+            patient-sensitive workflows, and private source code remain outside the public website.
+          </p>
+          <ul class="product-proof-list">
+            <li><strong>Input</strong><span>3D scan / mesh metrics and versioned source geometry</span></li>
+            <li><strong>Processing</strong><span>Deterministic QA rules plus assistive AI review</span></li>
+            <li><strong>Output</strong><span>Review flags, acceptance gates, and traceable records</span></li>
+            <li><strong>Handoff</strong><span>Professional CAD / simulation / lifecycle-management workflow</span></li>
+          </ul>
+        </article>
+
+        <article class="product-demo-app" aria-label="IEAI Geometry QA public demonstrator">
+          <div class="demo-app-bar">
+            <span>IEAI // GEOMETRY QA PUBLIC DEMO</span>
+            <span class="demo-live-badge">CLIENT-SIDE</span>
+          </div>
+          <div class="demo-app-body">
+            <h3>Run a controlled geometry review</h3>
+            <p class="demo-disclaimer" style="margin-top:0">
+              Use the sample engineering metrics below or change them. No geometry file is uploaded.
+            </p>
+
+            <div class="demo-grid">
+              <div class="demo-field">
+                <label for="demo-faces">Triangle / face count</label>
+                <input id="demo-faces" type="number" min="1" value="28412" inputmode="numeric">
+              </div>
+              <div class="demo-field">
+                <label for="demo-nonmanifold">Non-manifold edges</label>
+                <input id="demo-nonmanifold" type="number" min="0" value="0" inputmode="numeric">
+              </div>
+              <div class="demo-field">
+                <label for="demo-zeroedges">Zero-length edges</label>
+                <input id="demo-zeroedges" type="number" min="0" value="0" inputmode="numeric">
+              </div>
+              <div class="demo-field">
+                <label for="demo-normals">Surface-normal review</label>
+                <select id="demo-normals">
+                  <option value="consistent" selected>Consistent</option>
+                  <option value="mixed">Mixed / requires review</option>
+                  <option value="unknown">Unknown</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="demo-actions">
+              <button type="button" class="btn btn-primary" id="run-geometry-demo">Run Geometry Review</button>
+              <button type="button" class="btn btn-outline" id="reset-geometry-demo">Reset Sample</button>
+            </div>
+
+            <div class="demo-result" aria-live="polite">
+              <div class="demo-result-header">
+                <h4>Review result</h4>
+                <span class="demo-result-status ready" id="demo-result-status">Ready</span>
+              </div>
+              <div class="demo-output" id="demo-output">
+                Run the review to generate a deterministic QA result and a traceable demonstration record.
+              </div>
+              <div class="demo-audit" id="demo-audit">
+                DEMO RECORD: waiting for input
+              </div>
+            </div>
+
+            <p class="demo-disclaimer">
+              Demonstration only. This is not a diagnostic or clinical tool, does not establish regulatory compliance,
+              and is intentionally simpler than the private IEAI R&amp;D system.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <!-- DEVELOPMENT STATUS SECTION -->
   <section class="progress-section" id="progress" aria-labelledby="progress-title">
     <div class="wrap">
@@ -3469,10 +3777,11 @@ summary:focus-visible {
             <h3>Milestones Established</h3>
           </div>
           <ul class="progress-list">
-            <li>Infinite Expressions LLC legally established in Colorado</li>
+            <li>Infinite Expressions LLC formed in Colorado on April 8, 2025 (public state record)</li>
             <li>U.S. nonprovisional patent application filed and pending</li>
             <li>NVIDIA Inception program membership accepted</li>
             <li>AWS Activate startup resources approved</li>
+            <li>PTC for Startups access established for Creo+ and Codebeamer+</li>
             <li>Authorized maxillofacial 3D geometry obtained for feasibility work</li>
             <li>Local AI development environment and model infrastructure operational</li>
           </ul>
@@ -3557,6 +3866,10 @@ summary:focus-visible {
         <div class="founder-credentials">
           <strong>James E. McCord Jr.</strong>
           <span>Founder · Patient Advocate · Technical Lead</span>
+          <div class="team-verification-links" aria-label="Founder and company verification links">
+            <a href="https://github.com/InfiniteExpressionsLLC" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+            <a href="https://www.sos.state.co.us/biz/BusinessEntityDetail.do?fileId=20251154298" target="_blank" rel="noopener noreferrer">Colorado Business Record</a>
+          </div>
         </div>
       </div>
 
@@ -3564,7 +3877,7 @@ summary:focus-visible {
         <div class="kicker">Founder Perspective</div>
         <h2 id="founder-title">Built from lived patient experience and technical engineering.</h2>
         <p>
-          <strong>James E. McCord Jr.</strong> is the founder, patient advocate, and technical lead behind Infinite Expressions LLC.
+          <strong>James E. McCord Jr.</strong> is the founder, patient advocate, and technical lead behind Infinite Expressions LLC, a Colorado company formed in 2025.
           Following a medical journey that included <strong>206 lifetime surgeries</strong>—with 198 procedures performed between
           the ages of 15 and 21—and later becoming a facial-prosthesis user himself, he experienced firsthand the physical,
           emotional, and logistical friction of traditional analog prosthesis fabrication.
@@ -3738,6 +4051,7 @@ summary:focus-visible {
     <nav class="footer-links" aria-label="Footer Quick Navigation">
       <a href="#technology">Technology</a>
       <a href="#ieai">IEAI System</a>
+      <a href="#product-demo">Product Demo</a>
       <a href="#progress">R&amp;D Status</a>
       <a href="#founder">Founder Story</a>
       <a href="#collaborate">Partnerships</a>
@@ -4066,6 +4380,61 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   if (moduleCards[0]) showModule(moduleCards[0]);
 
+
+  // Public IEAI geometry-QA demonstrator.
+  // Deterministic browser-only logic; no network calls or file uploads.
+  const demoFaces = document.querySelector('#demo-faces');
+  const demoNonManifold = document.querySelector('#demo-nonmanifold');
+  const demoZeroEdges = document.querySelector('#demo-zeroedges');
+  const demoNormals = document.querySelector('#demo-normals');
+  const demoRun = document.querySelector('#run-geometry-demo');
+  const demoReset = document.querySelector('#reset-geometry-demo');
+  const demoStatus = document.querySelector('#demo-result-status');
+  const demoOutput = document.querySelector('#demo-output');
+  const demoAudit = document.querySelector('#demo-audit');
+
+  const runPublicGeometryReview = () => {
+    if (!demoFaces || !demoNonManifold || !demoZeroEdges || !demoNormals || !demoStatus || !demoOutput || !demoAudit) return;
+    const faces = Math.max(0, Number(demoFaces.value || 0));
+    const nonManifold = Math.max(0, Number(demoNonManifold.value || 0));
+    const zeroEdges = Math.max(0, Number(demoZeroEdges.value || 0));
+    const normals = demoNormals.value;
+
+    const flags = [];
+    if (faces < 100) flags.push('Model density is below the demonstration review floor.');
+    if (nonManifold > 0) flags.push(`${nonManifold} non-manifold edge${nonManifold === 1 ? '' : 's'} require engineering review.`);
+    if (zeroEdges > 0) flags.push(`${zeroEdges} zero-length edge${zeroEdges === 1 ? '' : 's'} require repair or disposition.`);
+    if (normals !== 'consistent') flags.push(normals === 'mixed' ? 'Surface normals are mixed and require orientation review.' : 'Surface-normal state is unknown and requires verification.');
+
+    const passed = flags.length === 0;
+    demoStatus.textContent = passed ? 'Pass sample gate' : 'Human review required';
+    demoStatus.className = `demo-result-status ${passed ? 'pass' : 'review'}`;
+    demoOutput.innerHTML = passed
+      ? '<strong style="color:#fff">No demonstration defects were triggered.</strong><br>The sample may proceed to the next engineering review gate. A qualified reviewer would still verify source geometry and downstream acceptance criteria.'
+      : '<strong style="color:#fff">Review flags:</strong><br>' + flags.map(item => `• ${item}`).join('<br>');
+
+    const record = [
+      'IEAI-PUBLIC-DEMO',
+      `faces=${faces}`,
+      `nonManifold=${nonManifold}`,
+      `zeroLength=${zeroEdges}`,
+      `normals=${normals}`,
+      `decision=${passed ? 'PASS_SAMPLE_GATE' : 'REVIEW_REQUIRED'}`
+    ].join(' | ');
+    demoAudit.textContent = `DEMO RECORD: ${record}`;
+  };
+
+  demoRun?.addEventListener('click', runPublicGeometryReview);
+  demoReset?.addEventListener('click', () => {
+    if (demoFaces) demoFaces.value = '28412';
+    if (demoNonManifold) demoNonManifold.value = '0';
+    if (demoZeroEdges) demoZeroEdges.value = '0';
+    if (demoNormals) demoNormals.value = 'consistent';
+    if (demoStatus) { demoStatus.textContent = 'Ready'; demoStatus.className = 'demo-result-status ready'; }
+    if (demoOutput) demoOutput.textContent = 'Run the review to generate a deterministic QA result and a traceable demonstration record.';
+    if (demoAudit) demoAudit.textContent = 'DEMO RECORD: waiting for input';
+  });
+
   // Roadmap status highlighter
   const statusButtons = [...document.querySelectorAll('.status-filter-btn')];
   const roadmapCards = [...document.querySelectorAll('.progress-column')];
@@ -4088,7 +4457,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Scroll-triggered reveals
   const revealTargets = [
     ...document.querySelectorAll(
-      '.credential-item, .opportunity-comparison, .pillar-card, .workflow-nav-bar, .workflow-detail-display, .module-card, .module-explorer, .progress-column, .facts-card, .founder-visual-panel, .founder-copy, .collab-card, .tech-partner-card, .contact-copy, .contact-card'
+      '.credential-item, .opportunity-comparison, .pillar-card, .workflow-nav-bar, .workflow-detail-display, .module-card, .module-explorer, .product-demo-context, .product-demo-app, .progress-column, .facts-card, .founder-visual-panel, .founder-copy, .collab-card, .tech-partner-card, .contact-copy, .contact-card'
     )  ];
 
   revealTargets.forEach((element, index) => {
@@ -4296,7 +4665,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Fixed section rail gives the page a custom engineered navigation signature.
   const railSections = [
-    ['top','Top'],['technology','Workflow'],['ieai','IEAI'],['progress','R&D'],['founder','Founder'],['collaborate','Partners'],['contact','Contact']
+    ['top','Top'],['technology','Workflow'],['ieai','IEAI'],['product-demo','Demo'],['progress','R&D'],['founder','Founder'],['collaborate','Partners'],['contact','Contact']
   ];
   if (window.innerWidth > 900) {
     const rail=document.createElement('nav'); rail.className='section-rail'; rail.setAttribute('aria-label','Section navigator');
