@@ -3977,7 +3977,7 @@ summary:focus-visible {
     <div class="wrap">
       <div class="section-head">
         <div class="kicker">Public Product Demonstrator</div>
-        <h2 id="product-demo-title">See the software behavior, not just the concept.</h2>
+        <h2 id="product-demo-title">From a 3D scan to an engineering decision.</h2>
         <p>
           IEAI is a software product under active development. This public demonstrator exposes a small, non-clinical
           slice of the product philosophy: deterministic geometry-quality checks, human review gates, and an auditable
@@ -4011,11 +4011,22 @@ summary:focus-visible {
             <span class="demo-live-badge">CLIENT-SIDE</span>
           </div>
           <div class="demo-app-body">
-            <h3>Run a controlled geometry review</h3>
+            <h3>Explore a sample geometry quality gate</h3>
             <p class="demo-disclaimer" style="margin-top:0">
-              Use the sample engineering metrics below or change them. No geometry file is uploaded.
+              Start with the clean sample, then choose a problem scenario below. Watch how IEAI-style quality gates stop questionable geometry and produce an explainable review record. These are illustrative engineering metrics, not an actual facial scan. No geometry file is uploaded.
             </p>
 
+            <div class="demo-scenarios" aria-label="Choose an example geometry scenario">
+              <p style="margin:0 0 10px;color:var(--accent-silver);font-weight:700">1 · Choose an example</p>
+              <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px">
+                <button type="button" class="btn btn-outline" data-demo-scenario="clean">Clean mesh</button>
+                <button type="button" class="btn btn-outline" data-demo-scenario="open">Open / broken surface</button>
+                <button type="button" class="btn btn-outline" data-demo-scenario="degenerate">Damaged geometry</button>
+                <button type="button" class="btn btn-outline" data-demo-scenario="unknown">Unverified orientation</button>
+              </div>
+              <p id="demo-scenario-explanation" style="color:var(--text-muted);font-size:.9rem">Clean mesh: illustrative input with no triggered checks. Passing this example does not establish clinical or manufacturing readiness.</p>
+            </div>
+            <p style="color:var(--accent-silver);font-weight:700;margin:14px 0 0">2 · Inspect or adjust the engineering inputs</p>
             <div class="demo-grid">
               <div class="demo-field">
                 <label for="demo-faces">Triangle / face count</label>
@@ -4040,7 +4051,7 @@ summary:focus-visible {
             </div>
 
             <div class="demo-actions">
-              <button type="button" class="btn btn-primary" id="run-geometry-demo">Run Geometry Review</button>
+              <button type="button" class="btn btn-primary" id="run-geometry-demo">3 · Evaluate Sample</button>
               <button type="button" class="btn btn-outline" id="reset-geometry-demo">Reset Sample</button>
             </div>
 
@@ -4833,6 +4844,26 @@ document.addEventListener('DOMContentLoaded', () => {
     demoAudit.textContent = `DEMO RECORD: ${record}`;
   };
 
+  // Guided examples demonstrate the existing deterministic rules without importing geometry.
+  const demoScenarios = {
+    clean: ['28412', '0', '0', 'consistent', 'Clean mesh: no illustrative defects are triggered; human review is still required downstream.'],
+    open: ['28412', '12', '0', 'consistent', 'Open / broken surface: non-manifold edges can indicate an incomplete or ambiguous mesh requiring engineering review.'],
+    degenerate: ['28412', '0', '8', 'consistent', 'Damaged geometry: zero-length edges are degenerate elements that require repair or disposition.'],
+    unknown: ['28412', '0', '0', 'unknown', 'Unverified orientation: surface direction has not been checked; the review must stop rather than assume it is correct.']
+  };
+  document.querySelectorAll('[data-demo-scenario]').forEach(button => {
+    button.addEventListener('click', () => {
+      const values = demoScenarios[button.dataset.demoScenario];
+      if (!values) return;
+      if (demoFaces) demoFaces.value = values[0];
+      if (demoNonManifold) demoNonManifold.value = values[1];
+      if (demoZeroEdges) demoZeroEdges.value = values[2];
+      if (demoNormals) demoNormals.value = values[3];
+      const explanation = document.querySelector('#demo-scenario-explanation');
+      if (explanation) explanation.textContent = values[4];
+      runPublicGeometryReview();
+    });
+  });
   demoRun?.addEventListener('click', runPublicGeometryReview);
   demoReset?.addEventListener('click', () => {
     if (demoFaces) demoFaces.value = '28412';
