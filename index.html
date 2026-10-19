@@ -9,7 +9,7 @@
   <meta name="theme-color" content="#050d1a">
   <meta name="author" content="Infinite Expressions LLC">
   <link rel="canonical" href="https://iexpressionsllc.com/">
-  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkluZmluaXRlIEV4cHJlc3Npb25zIG1hcmsiPgogIDxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzFlNzNmZiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2E3YjBiOCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiByeD0iMjYiIGZpbGw9IiMwNzFiMzYiLz4KICA8cGF0aCBkPSJNMzMgNjRjMC0xNSA5LTI1IDIxLTI1IDE0IDAgMjIgMTYgMzEgMjkgNSA3IDkgMTIgMTQgMTIgNiAwIDEwLTYgMTAtMTZzLTQtMTYtMTAtMTZjLTUgMC05IDUtMTQgMTJsLTggMTJjLTkgMTMtMTYgMTctMjMgMTctMTIgMC0yMS0xMC0yMS0yNXptMTIgMGMwIDEwIDQgMTUgMTAgMTUgNSAwIDktNSAxNC0xMmw4LTEyYzgtMTIgMTUtMTggMjMtMTggMTMgMCAyMiAxMSAyMiAyN3MtOSAyNy0yMiAyN2MtMTIgMC0yMC0xMS0yOC0yMy03LTEwLTEyLTE5LTE4LTE5LTYgMC0xMCA2LTEwIDE1eiIgZmlsbD0idXJsKCNnKSIvPgo8L3N2Zz4K" type="image/svg+xml">
+  <link rel="icon" href="/infinite-expressions-emblem-v2.webp?v=20261019" type="image/webp">
 
   <!-- Open Graph / Social Sharing -->
   <meta property="og:title" content="Infinite Expressions LLC | Digital Facial Prosthetics R&D">
@@ -3338,7 +3338,8 @@ summary:focus-visible {
 }
 
 </style>
-  <link rel="stylesheet" href="/assets/cinematic-visual-refresh.css?v=20261018" media="all">
+  <link rel="stylesheet" href="/assets/cinematic-visual-refresh.css?v=20261019" media="all">
+  <link rel="stylesheet" href="/assets/ieai-site-release-20261019.css?v=1" media="all">
 
   <!-- Schema.org JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -3390,7 +3391,7 @@ summary:focus-visible {
 <header class="site-header" id="site-header">
   <div class="wrap nav">
     <a class="brand brand-full" href="#top" aria-label="Infinite Expressions Home">
-      <img class="brand-logo-emblem" src="/infinite-expressions-emblem-v2.webp" alt="Infinite Expressions LLC — Advancing Facial Reconstruction Through Innovation" width="400" height="400">
+      <img class="brand-logo-emblem" src="/infinite-expressions-emblem-v2.webp?v=20261019" alt="Infinite Expressions LLC — Advancing Facial Reconstruction Through Innovation" width="400" height="400">
     </a>
 
     <button class="menu-btn" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-navigation">
@@ -3474,91 +3475,7 @@ summary:focus-visible {
 
         <div class="metrology-stage">
           <!-- Engineering SVG Face Mesh with Scanning Horizon and Coordinates -->
-          <svg class="mesh-svg" viewBox="0 0 440 460" role="img" aria-label="Point Cloud Facial Metrology Mesh">
-            <defs>
-              <linearGradient id="meshGradient" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#4f9eff"/>
-                <stop offset="60%" stop-color="#2b7fff"/>
-                <stop offset="100%" stop-color="#8ba7cc"/>
-              </linearGradient>
-              <radialGradient id="meshCenterGlow" cx="50%" cy="45%" r="50%">
-                <stop offset="0%" stop-color="#2b7fff" stop-opacity="0.22"/>
-                <stop offset="100%" stop-color="#2b7fff" stop-opacity="0"/>
-              </radialGradient>
-              <linearGradient id="laserBeamGrad" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0%" stop-color="#4f9eff" stop-opacity="0"/>
-                <stop offset="50%" stop-color="#4f9eff" stop-opacity="0.95"/>
-                <stop offset="100%" stop-color="#4f9eff" stop-opacity="0"/>
-              </linearGradient>
-            </defs>
-
-            <!-- Orthographic Grid Crosshairs -->
-            <g stroke="rgba(255,255,255,0.06)" stroke-width="1" stroke-dasharray="4 4">
-              <line x1="220" y1="20" x2="220" y2="440"/>
-              <line x1="30" y1="230" x2="410" y2="230"/>
-              <circle cx="220" cy="230" r="180" fill="none"/>
-            </g>
-
-            <!-- Base Anatomical Glow -->
-            <ellipse cx="220" cy="225" rx="160" ry="195" fill="url(#meshCenterGlow)"/>
-
-            <!-- Topological Wireframe Mesh Contours -->
-            <g fill="none" stroke="url(#meshGradient)" stroke-width="1.3" opacity="0.82">
-              <!-- Outer Craniofacial Outline -->
-              <path d="M220 40 C148 42 94 92 76 162 C58 234 82 322 138 380 C162 405 190 422 220 428 C250 422 278 405 302 380 C358 322 382 234 364 162 C346 92 292 42 220 40Z"/>
-              
-              <!-- Sagittal and Midline Curves -->
-              <path d="M220 40 C186 100 176 168 179 230 C183 306 197 372 220 428"/>
-              <path d="M220 40 C254 100 264 168 261 230 C257 306 243 372 220 428"/>
-
-              <!-- Transverse Craniofacial Latitude Curves -->
-              <path d="M98 128 C144 112 182 113 220 123 C258 113 296 112 342 128"/>
-              <path d="M78 176 C132 158 174 161 220 174 C266 161 308 158 362 176"/>
-              <path d="M72 230 C130 212 173 215 220 228 C267 215 310 212 368 230"/>
-              <path d="M82 284 C136 270 176 272 220 284 C264 272 304 270 358 284"/>
-              <path d="M102 336 C146 324 182 326 220 338 C258 326 294 324 338 336"/>
-              <path d="M134 378 C166 368 193 370 220 378 C247 370 274 368 306 378"/>
-
-              <!-- Maxillofacial / Periorbital / Nasolabial Structural Loops -->
-              <path d="M126 176 C148 188 168 189 190 177"/>
-              <path d="M250 177 C272 189 292 188 314 176"/>
-              <path d="M184 240 C198 256 242 256 256 240"/>
-              <path d="M172 306 C196 320 244 320 268 306"/>
-              <path d="M189 324 C206 332 234 332 251 324"/>
-
-              <!-- Nasal Bridge & Glabellar Struts -->
-              <path d="M220 123 L220 244"/>
-              <path d="M172 306 L126 336"/>
-              <path d="M268 306 L314 336"/>
-            </g>
-
-            <!-- Anatomical Feature Landmark Nodes -->
-            <g fill="#70b5ff">
-              <!-- Glabella / Nasion -->
-              <circle cx="220" cy="123" r="3.8"/>
-              <!-- Pronasale (Nasal Tip) -->
-              <circle cx="220" cy="244" r="4.2"/>
-              <!-- Subnasale -->
-              <circle cx="220" cy="272" r="3.5"/>
-              <!-- Cheilion / Perioral -->
-              <circle cx="172" cy="306" r="3.5"/>
-              <circle cx="268" cy="306" r="3.5"/>
-              <!-- Exocanthion / Outer Eye -->
-              <circle cx="126" cy="176" r="3.5"/>
-              <circle cx="314" cy="176" r="3.5"/>
-              <!-- Endocanthion / Inner Eye -->
-              <circle cx="190" cy="177" r="3.5"/>
-              <circle cx="250" cy="177" r="3.5"/>
-              <!-- Pogonion (Chin) -->
-              <circle cx="220" cy="378" r="3.8"/>
-            </g>
-
-            <!-- Animated Laser Metrology Sweep Line -->
-            <g class="scan-beam">
-              <line x1="40" y1="220" x2="400" y2="220" stroke="url(#laserBeamGrad)" stroke-width="2.5"/>
-              <circle cx="220" cy="220" r="4" fill="#fff" opacity="0.9"/>
-            </g>
-          </svg>
+          <div class="ieai-metrology-art" role="img" aria-label="Illustrative facial scan topology rendering; no patient imagery"></div>
 
           <!-- Precision Engineering Callouts -->
           <div class="metrology-callout callout-nasion" aria-hidden="true">
@@ -4041,7 +3958,18 @@ summary:focus-visible {
               Start with the clean sample, then choose a problem scenario below. Watch how IEAI-style quality gates stop questionable geometry and produce an explainable review record. These are illustrative engineering metrics, not an actual facial scan. No geometry file is uploaded.
             </p>
 
-            <div class="demo-scenarios" aria-label="Choose an example geometry scenario">
+            <!-- Public synthetic engineering visualization; QA rules and controls below unchanged. -->
+             <div class="ieai-viewport" data-qa-state="pending" role="group" aria-label="Illustrative geometry review viewport">
+               <div class="ieai-view-scan" aria-hidden="true"></div>
+               <div class="ieai-view-head"><span>IEAI / SURFACE INSPECTION</span><small>PUBLIC SYNTHETIC VISUAL</small></div>
+               <div class="ieai-view-badges" aria-hidden="true"><span>GEOMETRY QA</span><span>NON-CLINICAL</span></div>
+               <div class="ieai-view-metrics" aria-live="polite">
+                 <div><span class="metric-label">Illustrative mesh faces</span><strong class="metric-value" data-qa-view="faces">28,412</strong></div>
+                 <div><span class="metric-label">Detected review conditions</span><strong class="metric-value" data-qa-view="finding">AWAITING QA REVIEW</strong></div>
+               </div>
+               <div class="ieai-view-bottom"><span data-qa-view="scenario">BASELINE / NOMINAL</span><span data-qa-view="decision">REVIEW NOT RUN</span></div>
+             </div>
+             <div class="demo-scenarios" aria-label="Choose an example geometry scenario">
               <p style="margin:0 0 10px;color:var(--accent-silver);font-weight:700">1 · Choose an example</p>
               <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px">
                 <button type="button" class="btn btn-outline" data-demo-scenario="clean">Clean mesh</button>
@@ -4211,7 +4139,7 @@ summary:focus-visible {
     <div class="wrap founder-grid">
       <div class="founder-visual-panel">
         <div class="founder-brand-frame">
-          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkluZmluaXRlIEV4cHJlc3Npb25zIG1hcmsiPgogIDxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzFlNzNmZiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2E3YjBiOCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiByeD0iMjYiIGZpbGw9IiMwNzFiMzYiLz4KICA8cGF0aCBkPSJNMzMgNjRjMC0xNSA5LTI1IDIxLTI1IDE0IDAgMjIgMTYgMzEgMjkgNSA3IDkgMTIgMTQgMTIgNiAwIDEwLTYgMTAtMTZzLTQtMTYtMTAtMTZjLTUgMC05IDUtMTQgMTJsLTggMTJjLTkgMTMtMTYgMTctMjMgMTctMTIgMC0yMS0xMC0yMS0yNXptMTIgMGMwIDEwIDQgMTUgMTAgMTUgNSAwIDktNSAxNC0xMmw4LTEyYzgtMTIgMTUtMTggMjMtMTggMTMgMCAyMiAxMSAyMiAyN3MtOSAyNy0yMiAyN2MtMTIgMC0yMC0xMS0yOC0yMy03LTEwLTEyLTE5LTE4LTE5LTYgMC0xMCA2LTEwIDE1eiIgZmlsbD0idXJsKCNnKSIvPgo8L3N2Zz4K" width="84" height="84" alt="Infinite Expressions Brand Emblem">
+          <img src="/infinite-expressions-emblem-v2.webp?v=20261019" alt="Infinite Expressions LLC brand emblem" width="144" height="144" loading="lazy" decoding="async">
         </div>
         <blockquote class="founder-quote">
           &ldquo;This company exists because I have lived the problem from the patient side and believe modern engineering can help build a better path.&rdquo;
@@ -4486,7 +4414,7 @@ summary:focus-visible {
 <footer class="site-footer">
   <div class="wrap footer-main">
     <div class="footer-brand">
-      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkluZmluaXRlIEV4cHJlc3Npb25zIG1hcmsiPgogIDxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzFlNzNmZiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2E3YjBiOCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPgogIDxyZWN0IHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiByeD0iMjYiIGZpbGw9IiMwNzFiMzYiLz4KICA8cGF0aCBkPSJNMzMgNjRjMC0xNSA5LTI1IDIxLTI1IDE0IDAgMjIgMTYgMzEgMjkgNSA3IDkgMTIgMTQgMTIgNiAwIDEwLTYgMTAtMTZzLTQtMTYtMTAtMTZjLTUgMC05IDUtMTQgMTJsLTggMTJjLTkgMTMtMTYgMTctMjMgMTctMTIgMC0yMS0xMC0yMS0yNXptMTIgMGMwIDEwIDQgMTUgMTAgMTUgNSAwIDktNSAxNC0xMmw4LTEyYzgtMTIgMTUtMTggMjMtMTggMTMgMCAyMiAxMSAyMiAyN3MtOSAyNy0yMiAyN2MtMTIgMC0yMC0xMS0yOC0yMy03LTEwLTEyLTE5LTE4LTE5LTYgMC0xMCA2LTEwIDE1eiIgZmlsbD0idXJsKCNnKSIvPgo8L3N2Zz4K" width="40" height="40" alt="Infinite Expressions Logo">
+      <img src="/infinite-expressions-emblem-v2.webp?v=20261019" alt="Infinite Expressions LLC brand emblem" width="144" height="144" loading="lazy" decoding="async">
       <div>
         <strong>Infinite Expressions LLC</strong>
         <span>Reengineering the path to custom facial prosthetics</span>
@@ -5198,5 +5126,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 </script>
+<script defer src="/assets/ieai-site-release-20261019.js?v=1"></script>
 </body>
 </html>
