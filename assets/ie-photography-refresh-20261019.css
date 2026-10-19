@@ -1,12 +1,7 @@
-/* Infinite Expressions LLC — photographic visual correction, 2026-10-19
- * Replaces the rejected shared wireframe-face illustration in ALL THREE major
- * visual sections. Images are separately licensed Pexels photos by cottonbro studio.
- * Source pages: https://www.pexels.com/photo/close-up-photo-of-woman-with-black-curly-hair-8090124/
- * https://www.pexels.com/photo/portrait-photo-of-man-with-laser-lines-on-his-face-8090294/
- * https://www.pexels.com/photo/photo-of-woman-being-examined-8090126/
- * Editorial illustrative photography only; NOT IEAI patient data or output.
- */
-:root{--photo-hero:url("https://images.pexels.com/photos/8090124/pexels-photo-8090124.jpeg?auto=compress&cs=tinysrgb&w=1300");--photo-demo:url("https://images.pexels.com/photos/8090294/pexels-photo-8090294.jpeg?auto=compress&cs=tinysrgb&w=1300");--photo-tech:url("https://images.pexels.com/photos/8090126/pexels-photo-8090126.jpeg?auto=compress&cs=tinysrgb&w=1300")}
+/* Infinite Expressions LLC | illustrated research imagery upgrade | 2026-10-19.
+ * Original generated concept artwork chosen by the owner. Not patient data.
+ * Current site remains research-stage; no measured scan or clinical claims. */
+:root{--photo-hero:url("/assets/ieai-anatomy-research.webp");--photo-demo:url("/assets/ieai-concept-viewer.webp");--photo-tech:url("/assets/ieai-face-engineering.webp")}
 .scan-display{
  min-height:480px;
  background-image:linear-gradient(90deg,rgba(3,14,28,.96) 0%,rgba(3,14,28,.73) 35%,rgba(3,14,28,.17) 71%),var(--photo-hero);
