@@ -4,7 +4,7 @@
 .hero .hero-visual-card { overflow:hidden; border:1px solid rgba(157,206,247,.27); }
 .hero .metrology-stage { min-height:430px; isolation:isolate; position:relative; overflow:hidden;
  background:linear-gradient(90deg,rgba(4,13,26,.12),rgba(4,13,26,.04)),
- url('/assets/ieai-cinematic-facial-scan.svg');
+ linear-gradient(135deg,#07192d,#102d46);
  background-size:cover, auto 120%; background-position:center, 73% center; background-repeat:no-repeat;
  border-top:1px solid var(--ie-stroke); border-bottom:1px solid var(--ie-stroke); }
 .hero .metrology-stage::before { content:""; position:absolute; inset:0; pointer-events:none; z-index:0;
@@ -29,7 +29,7 @@
  border:1px solid rgba(121,197,254,.27); border-radius:17px; background:#06172a; }
 .ieai-viewport::before { content:""; position:absolute; inset:0; background:
  linear-gradient(90deg,rgba(3,14,29,.94) 0%,rgba(3,14,29,.64) 40%,rgba(3,14,29,.08) 100%),
- url('/assets/ieai-cinematic-facial-scan.svg');
+ linear-gradient(135deg,#07192d,#102d46);
  background-size:cover,auto 136%; background-position:center,78% 48%; background-repeat:no-repeat; }
 .ieai-viewport::after { content:""; position:absolute; inset:0;pointer-events:none;
  background:linear-gradient(180deg,rgba(68,179,255,.11),transparent 24%,transparent 85%,rgba(16,68,113,.26));
