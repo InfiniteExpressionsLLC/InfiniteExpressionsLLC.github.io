@@ -1,0 +1,79 @@
+/* Infinite Expressions LLC — photographic visual correction, 2026-10-19
+ * Replaces the rejected shared wireframe-face illustration in ALL THREE major
+ * visual sections. Images are separately licensed Pexels photos by cottonbro studio.
+ * Source pages: https://www.pexels.com/photo/close-up-photo-of-woman-with-black-curly-hair-8090124/
+ * https://www.pexels.com/photo/portrait-photo-of-man-with-laser-lines-on-his-face-8090294/
+ * https://www.pexels.com/photo/photo-of-woman-being-examined-8090126/
+ * Editorial illustrative photography only; NOT IEAI patient data or output.
+ */
+:root{--photo-hero:url("https://images.pexels.com/photos/8090124/pexels-photo-8090124.jpeg?auto=compress&cs=tinysrgb&w=1300");--photo-demo:url("https://images.pexels.com/photos/8090294/pexels-photo-8090294.jpeg?auto=compress&cs=tinysrgb&w=1300");--photo-tech:url("https://images.pexels.com/photos/8090126/pexels-photo-8090126.jpeg?auto=compress&cs=tinysrgb&w=1300")}
+.scan-display{
+ min-height:480px;
+ background-image:linear-gradient(90deg,rgba(3,14,28,.96) 0%,rgba(3,14,28,.73) 35%,rgba(3,14,28,.17) 71%),var(--photo-hero);
+ background-position:center,70% 48%;
+ background-size:cover,cover;
+ background-repeat:no-repeat;
+ background-color:#071627;
+}
+.scan-display:before{background:linear-gradient(180deg,rgba(5,16,30,.12),transparent 46%,rgba(3,13,27,.72));}
+.scan-display:after{left:74%;width:1px;background:linear-gradient(transparent,rgba(158,222,247,.05) 14%,rgba(173,225,253,.58) 50%,transparent 85%);box-shadow:0 0 20px rgba(81,160,226,.22);opacity:.75}
+.scan-hud{padding:15px 17px;border:1px solid rgba(161,207,232,.17);border-radius:13px;background:linear-gradient(90deg,rgba(5,20,37,.85),rgba(5,20,37,.36));backdrop-filter:blur(6px)}
+.scan-hud .hud-big{font-family:inherit;font-weight:800;letter-spacing:-.04em}
+.display-top span:first-child{color:#c6dced}
+.display-top span:last-child{color:#87c8dc}
+.demo-visual{background:radial-gradient(ellipse at 64% 50%,rgba(21,78,119,.26),transparent 75%),#061522}
+.demo-visual-image{
+ opacity:1;
+ background-image:linear-gradient(90deg,rgba(3,15,30,.96) 0%,rgba(3,15,30,.82) 37%,rgba(3,15,30,.2) 76%),var(--photo-demo);
+ background-position:center,72% center;
+ background-size:cover,cover;
+ background-repeat:no-repeat;
+ filter:saturate(.85);
+ transition:filter .3s,opacity .3s;
+}
+.demo-visual-image:after{background:linear-gradient(180deg,rgba(3,13,26,.1),transparent 44%,rgba(3,12,25,.88))}
+.demo-hud{border-left:2px solid rgba(117,192,235,.62);margin:25px 0 0 24px;max-width:310px;padding:18px 20px;background:linear-gradient(90deg,rgba(3,17,32,.84),rgba(3,17,32,.25));border-radius:0 12px 12px 0}
+.demo-hud strong{font-family:inherit;letter-spacing:-.045em}
+.demo-visual[data-status="pass"] .demo-hud{border-left-color:#79dbb5}
+.demo-visual[data-status="review"] .demo-hud{border-left-color:#ffd08e}
+.demo-visual[data-status="review"] .demo-visual-image{filter:saturate(.62) sepia(.1)}
+.demo-visual[data-status="pass"] .demo-visual-image{filter:saturate(1)}
+.scan-crosshair{left:77%;opacity:.36;width:1px}
+.wide-image{
+ background-image:linear-gradient(180deg,rgba(3,15,29,.09) 0%,rgba(3,15,29,.16) 40%,rgba(3,15,29,.91) 100%),var(--photo-tech);
+ background-position:center,center 43%;
+ background-size:cover,cover;
+ background-repeat:no-repeat;
+ background-color:#061422;
+ border-color:rgba(147,205,243,.34);
+}
+.wide-image .image-label{font-family:inherit;font-size:.81rem;letter-spacing:.01em;line-height:1.7;color:#e2effc;background:rgba(3,16,30,.85);backdrop-filter:blur(8px)}
+/* The five workflow stages should look like an engineering interface, not cartoons. */
+.process-art{height:63px;display:flex;align-items:center;justify-content:flex-start;padding:16px;background:linear-gradient(90deg,rgba(76,149,199,.15),transparent);border-left:2px solid rgba(117,197,249,.52);border-radius:4px 12px 12px 4px}
+.process-art svg{display:none}
+.process-art:before{content:"CAPTURE";color:#9ddfff;font:700 .75rem/1.2 Consolas,monospace;letter-spacing:.15em}
+.process-card:nth-child(2) .process-art:before{content:"INSPECT"}
+.process-card:nth-child(3) .process-art:before{content:"ENGINEER"}
+.process-card:nth-child(4) .process-art:before{content:"FABRICATE"}
+.process-card:nth-child(5) .process-art:before{content:"RESTORE"}
+@media(max-width:980px){.scan-display{min-height:430px}}
+@media(max-width:640px){
+ .hero{padding-top:28px}
+ .scan-display{min-height:370px;background-position:center,67% center}
+ .scan-hud{left:11px;top:13px;padding:11px;width:60%;gap:11px}
+ .scan-hud .hud-big{font-size:1.45rem}
+ .scan-hud strong{font-size:.85rem}
+ .scan-overlay-bottom{font-size:.54rem;line-height:1.45}
+ .demo-visual-image{background-position:center,67% center;background-size:cover,cover}
+ .demo-hud{margin:12px 0 0 10px;padding:12px 11px;max-width:52%;gap:7px}
+ .demo-hud strong{font-size:1.2rem;overflow-wrap:anywhere}
+ .demo-hud p{font-size:.7rem}
+ .demo-measure{gap:5px}
+ .demo-measure b{padding:5px 6px;font-size:.62rem}
+ .demo-stage-foot{font-size:.53rem}
+ .wide-image{min-height:370px;background-position:center,53% center}
+ .process-art{height:50px;padding:10px}
+ .process-art:before{font-size:.66rem;letter-spacing:.07em}
+ .wordmark .sub{font-size:.47rem}
+}
+@media(max-width:390px){.scan-hud{width:65%}.demo-hud{max-width:56%}}
