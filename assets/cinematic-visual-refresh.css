@@ -1,0 +1,265 @@
+/* Infinite Expressions — Cinematic concept artwork treatment (preview).
+   Original local SVG; no external image service, video or client library. */
+.hero {
+  isolation: isolate;
+}
+.hero-cinematic-art {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(90deg,
+      rgba(5, 13, 26, .98) 0%,
+      rgba(5, 13, 26, .88) 27%,
+      rgba(5, 13, 26, .56) 48%,
+      rgba(5, 13, 26, .08) 79%,
+      rgba(5, 13, 26, .16) 100%),
+    url("/assets/ieai-cinematic-facial-scan.svg");
+  background-position: center, 63% center;
+  background-repeat: no-repeat;
+  background-size: cover, cover;
+  opacity: .87;
+  transform: scale(1.025);
+  transform-origin: 70% 45%;
+  animation: cinematicScanDrift 19s ease-in-out infinite alternate;
+}
+.hero-cinematic-art::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(5,13,26,.05) 62%, rgba(5,13,26,.88) 100%);
+}
+.hero .hero-grid-pattern {
+  opacity: .28;
+}
+.hero .hero-copy-block {
+  position: relative;
+  z-index: 3;
+  text-shadow: 0 1px 24px rgba(3, 11, 24, .34);
+}
+.hero .hero-visual-card {
+  background: linear-gradient(156deg, rgba(10, 30, 54, .75), rgba(5, 15, 30, .91));
+  border-color: rgba(139, 203, 252, .28);
+  box-shadow: 0 25px 90px rgba(0, 7, 19, .72), 0 0 55px rgba(34, 112, 201, .15);
+  backdrop-filter: blur(13px);
+}
+.hero-art-attribution {
+  position: absolute;
+  right: max(18px, calc((100vw - 1220px)/2));
+  bottom: 14px;
+  z-index: 4;
+  font: 600 .68rem/1.5 var(--font-mono);
+  letter-spacing: .04em;
+  color: #bacce1;
+  background: rgba(5, 13, 26, .72);
+  border: 1px solid rgba(163, 205, 239, .17);
+  border-radius: 999px;
+  padding: 6px 13px;
+  pointer-events: none;
+}
+@keyframes cinematicScanDrift {
+  from { transform: scale(1.025) translate3d(-.6%, .2%, 0); }
+  to   { transform: scale(1.085) translate3d(.8%, -.5%, 0); }
+}
+/* Technical section now receives a restrained second image treatment. */
+.technology-section {
+  background-image:
+    linear-gradient(90deg, rgba(5, 13, 26, .96), rgba(5, 13, 26, .86) 47%, rgba(5, 13, 26, .7)),
+    url("/assets/ieai-cinematic-facial-scan.svg");
+  background-repeat: no-repeat;
+  background-position: center, right center;
+  background-size: cover, auto 105%;
+  background-attachment: scroll;
+}
+@media (max-width: 900px) {
+  .hero-cinematic-art {
+    background-image: linear-gradient(180deg, rgba(5,13,26,.68), rgba(5,13,26,.79)),
+      url("/assets/ieai-cinematic-facial-scan.svg");
+    background-size: cover, auto 100%;
+    background-position: center, 70% center;
+    opacity: .48;
+  }
+  .hero .hero-copy-block {
+    text-shadow: 0 1px 20px rgba(3, 9, 19, .45);
+  }
+  .technology-section { background-size: cover, auto 76%; }
+}
+@media (max-width: 640px) {
+  .hero-cinematic-art { background-position: center, 67% 9%; opacity: .33; }
+  .hero-art-attribution {
+    position: relative;
+    display: block;
+    text-align: center;
+    bottom: auto;
+    right: auto;
+    margin: 20px 16px 0;
+    background: transparent;
+    border: none;
+  }
+  .technology-section {
+    background-image: linear-gradient(180deg, rgba(5,13,26,.95), rgba(5,13,26,.95)),
+      url("/assets/ieai-cinematic-facial-scan.svg");
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-cinematic-art { animation: none !important; transform: none !important; }
+}
+
+/* Full-bleed image-led interlude: the conceptual scan is intentionally
+   unobscured by the hero's existing engineering dashboard. */
+.scan-showcase {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 490px;
+  display: flex;
+  align-items: center;
+  color: #eef6ff;
+  border-block: 1px solid rgba(123, 181, 229, .19);
+  background-color: #061729;
+  background-image:
+    linear-gradient(90deg, rgba(4, 13, 26, .99) 0%, rgba(4, 13, 26, .93) 30%, rgba(4, 13, 26, .44) 59%, rgba(4, 13, 26, .08) 100%),
+    url("/assets/ieai-cinematic-facial-scan.svg");
+  background-size: cover, cover;
+  background-repeat: no-repeat;
+  background-position: center, center;
+}
+.scan-showcase::before {
+  content: "";
+  position: absolute;
+  top: -25%;
+  bottom: -25%;
+  width: 2px;
+  left: 71%;
+  opacity: .63;
+  background: linear-gradient(transparent 10%, #b6f1ff 48%, #4faaff 62%, transparent 90%);
+  box-shadow: 0 0 42px 8px rgba(97, 179, 250, .15);
+  pointer-events: none;
+  animation: scanShowcaseBeam 10s ease-in-out infinite alternate;
+}
+.scan-showcase::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(2, 9, 20, .05) 63%, rgba(2, 9, 20, .43) 100%);
+  pointer-events: none;
+}
+.scan-showcase__content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding-block: 86px 95px;
+}
+.scan-showcase__copy { max-width: 540px; }
+.scan-showcase__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #a9d5ff;
+  font: 700 .76rem/1.4 var(--font-mono);
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.scan-showcase__eyebrow::before {
+  content: "";
+  width: 7px; height: 7px; border-radius: 50%;
+  background: #87c8ff;
+  box-shadow: 0 0 0 5px rgba(87, 178, 255, .12);
+}
+.scan-showcase h2 {
+  font-size: clamp(2.1rem, 3.7vw, 3.65rem);
+  line-height: 1.12;
+  letter-spacing: -.035em;
+  color: #fff;
+  margin-bottom: 18px;
+  max-width: 520px;
+  text-wrap: balance;
+}
+.scan-showcase h2 span { color: #9dccff; }
+.scan-showcase p {
+  max-width: 480px;
+  color: #c4d5e7;
+  font-size: 1.03rem;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+.scan-showcase__signals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+  margin: 0 0 25px;
+  padding: 0;
+  list-style: none;
+}
+.scan-showcase__signals li {
+  font: 650 .74rem/1.3 var(--font-mono);
+  letter-spacing: .035em;
+  text-transform: uppercase;
+  padding: 9px 11px;
+  background: rgba(13, 50, 86, .58);
+  border: 1px solid rgba(121, 188, 244, .22);
+  border-radius: 7px;
+  color: #cce8ff;
+}
+.scan-showcase__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 13px;
+  padding-bottom: 7px;
+  color: #e8f5ff;
+  border-bottom: 1px solid rgba(157, 213, 255, .6);
+  font-weight: 700;
+  transition: color .2s ease, gap .2s ease;
+}
+.scan-showcase__link:hover { color: #a6d5ff; gap: 20px; }
+.scan-showcase__link:focus-visible { outline: 3px solid #b1dfff; outline-offset: 5px; }
+.scan-showcase__disclosure {
+  position: absolute;
+  z-index: 2;
+  right: max(20px, calc((100vw - 1220px)/2));
+  bottom: 17px;
+  color: #d5e7f8;
+  font: 650 .67rem/1.3 var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  background: rgba(3, 13, 25, .74);
+  border: 1px solid rgba(122, 191, 238, .19);
+  padding: 7px 12px;
+  border-radius: 20px;
+}
+@keyframes scanShowcaseBeam {
+  from { transform: translateX(-70px); opacity: .2; }
+  to { transform: translateX(75px); opacity: .65; }
+}
+@media (max-width: 900px) {
+  .scan-showcase {
+    min-height: 560px;
+    background-image:
+      linear-gradient(180deg, rgba(3, 12, 25, .96) 0%, rgba(3, 12, 25, .83) 36%, rgba(3, 12, 25, .39) 72%, rgba(3, 12, 25, .28) 100%),
+      url("/assets/ieai-cinematic-facial-scan.svg");
+    background-size: cover, auto 95%;
+    background-position: center, 69% bottom;
+  }
+  .scan-showcase__content { align-self: flex-start; padding-block: 55px 180px; }
+  .scan-showcase__copy { max-width: 650px; }
+  .scan-showcase::before { display: none; }
+}
+@media (max-width: 600px) {
+  .scan-showcase {
+    min-height: 690px;
+    align-items: flex-start;
+    background-size: cover, auto 63%;
+    background-position: center, 74% bottom;
+  }
+  .scan-showcase__content { padding-block: 48px 260px; }
+  .scan-showcase h2 { max-width: 350px; font-size: clamp(1.95rem, 8vw, 2.5rem); }
+  .scan-showcase p { font-size: .93rem; line-height: 1.55; max-width: 355px; }
+  .scan-showcase__signals { gap: 6px; }
+  .scan-showcase__signals li { font-size: .64rem; padding: 7px; }
+  .scan-showcase__disclosure { left: 16px; right: 16px; bottom: 12px; text-align: center; font-size: .57rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .scan-showcase::before { animation: none !important; }
+}
