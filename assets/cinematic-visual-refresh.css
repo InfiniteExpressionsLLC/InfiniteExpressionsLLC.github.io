@@ -15,7 +15,7 @@
       rgba(5, 13, 26, .56) 48%,
       rgba(5, 13, 26, .08) 79%,
       rgba(5, 13, 26, .16) 100%),
-    url("/assets/ieai-cinematic-facial-scan.svg");
+    linear-gradient(135deg,#07192d,#102d46);
   background-position: center, 63% center;
   background-repeat: no-repeat;
   background-size: cover, cover;
@@ -66,7 +66,7 @@
 .technology-section {
   background-image:
     linear-gradient(90deg, rgba(5, 13, 26, .96), rgba(5, 13, 26, .86) 47%, rgba(5, 13, 26, .7)),
-    url("/assets/ieai-cinematic-facial-scan.svg");
+    linear-gradient(135deg,#07192d,#102d46);
   background-repeat: no-repeat;
   background-position: center, right center;
   background-size: cover, auto 105%;
@@ -75,7 +75,7 @@
 @media (max-width: 900px) {
   .hero-cinematic-art {
     background-image: linear-gradient(180deg, rgba(5,13,26,.68), rgba(5,13,26,.79)),
-      url("/assets/ieai-cinematic-facial-scan.svg");
+      linear-gradient(135deg,#07192d,#102d46);
     background-size: cover, auto 100%;
     background-position: center, 70% center;
     opacity: .48;
@@ -99,7 +99,7 @@
   }
   .technology-section {
     background-image: linear-gradient(180deg, rgba(5,13,26,.95), rgba(5,13,26,.95)),
-      url("/assets/ieai-cinematic-facial-scan.svg");
+      linear-gradient(135deg,#07192d,#102d46);
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -120,7 +120,7 @@
   background-color: #061729;
   background-image:
     linear-gradient(90deg, rgba(4, 13, 26, .99) 0%, rgba(4, 13, 26, .93) 30%, rgba(4, 13, 26, .44) 59%, rgba(4, 13, 26, .08) 100%),
-    url("/assets/ieai-cinematic-facial-scan.svg");
+    linear-gradient(135deg,#07192d,#102d46);
   background-size: cover, cover;
   background-repeat: no-repeat;
   background-position: center, center;
@@ -238,7 +238,7 @@
     min-height: 560px;
     background-image:
       linear-gradient(180deg, rgba(3, 12, 25, .96) 0%, rgba(3, 12, 25, .83) 36%, rgba(3, 12, 25, .39) 72%, rgba(3, 12, 25, .28) 100%),
-      url("/assets/ieai-cinematic-facial-scan.svg");
+      linear-gradient(135deg,#07192d,#102d46);
     background-size: cover, auto 95%;
     background-position: center, 69% bottom;
   }
