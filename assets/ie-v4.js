@@ -7,7 +7,7 @@ function closeNav(){if(!nav||!toggle)return;nav.classList.remove('open');toggle.
 toggle?.addEventListener('click',()=>{const isOpen=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(isOpen));toggle.textContent=isOpen?'×':'☰';});
 $$('.nav-links a').forEach(a=>a.addEventListener('click',closeNav));
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeNav()});
-window.addEventListener('resize',()=>{if(window.innerWidth>980)closeNav()});
+window.addEventListener('resize',()=>{if(window.innerWidth>1140)closeNav()});
 const progress=$('#pageProgress');
 function trackScroll(){const max=document.documentElement.scrollHeight-innerHeight; if(progress)progress.style.transform='scaleX('+(max>0?Math.max(0,Math.min(1,scrollY/max)):0)+')'}
 window.addEventListener('scroll',trackScroll,{passive:true});trackScroll();
